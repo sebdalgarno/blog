@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Fishy Data</title>
+    <link>https://fishydata.netlify.app/</link>
+    <description>Recent content on Fishy Data</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://example.org/" rel="self" type="application/rss+xml" />
+    <atom:link href="https://fishydata.netlify.app/" rel="self" type="application/rss+xml" />
 
     
       <item>
         <title>Articles</title>
-        <link>http://example.org/articles/</link>
+        <link>https://fishydata.netlify.app/articles/</link>
         <pubDate>Thu, 26 Nov 2020 00:00:00 +0000</pubDate>
         
-        <guid>http://example.org/articles/</guid>
+        <guid>https://fishydata.netlify.app/articles/</guid>
         <description>
           
         </description>
@@ -22,10 +22,10 @@
     
       <item>
         <title>Projects</title>
-        <link>http://example.org/projects/</link>
+        <link>https://fishydata.netlify.app/projects/</link>
         <pubDate>Thu, 26 Nov 2020 00:00:00 +0000</pubDate>
         
-        <guid>http://example.org/projects/</guid>
+        <guid>https://fishydata.netlify.app/projects/</guid>
         <description>
           
         </description>
@@ -33,10 +33,10 @@
     
       <item>
         <title>Posts</title>
-        <link>http://example.org/post/</link>
+        <link>https://fishydata.netlify.app/post/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://example.org/post/</guid>
+        <guid>https://fishydata.netlify.app/post/</guid>
         <description>
           
         </description>

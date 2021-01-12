@@ -4,7 +4,7 @@ title: "Hugo Tania"
 theme: "hugo-tania"
 
 params:
-  titleEmoji: '😎'
+  titleEmoji: ':fish:'
   socialOptions:
     github: 
     twitter: 
