@@ -16,5 +16,14 @@
       <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>test</title>
+      <link>http://example.org/post/test/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/test/</guid>
+      <description>Hi! </description>
+    </item>
+    
   </channel>
 </rss>

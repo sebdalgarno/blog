@@ -73,6 +73,11 @@
   </url>
   
   <url>
+    <loc>http://example.org/post/test/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://example.org/tags/text/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url>
