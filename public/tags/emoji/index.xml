@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>emoji on Fishy Data</title>
-    <link>https://fishydata.netlify.app/tags/emoji/</link>
-    <description>Recent content in emoji on Fishy Data</description>
+    <title>emoji on Hugo Tania</title>
+    <link>https://example.com/tags/emoji/</link>
+    <description>Recent content in emoji on Hugo Tania</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://fishydata.netlify.app/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emoji Support</title>
-      <link>https://fishydata.netlify.app/post/emoji-support/</link>
+      <link>https://example.com/post/emoji-support/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://fishydata.netlify.app/post/emoji-support/</guid>
+      <guid>https://example.com/post/emoji-support/</guid>
       <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
     </item>
     

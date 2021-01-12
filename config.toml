@@ -1,6 +1,0 @@
-theme = "hugo-tania"
-baseURL = "https://fishydata.netlify.app/"
-languageCode = "en-us"
-title = "Fishy Data"
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-enableEmoji = true

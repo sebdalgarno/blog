@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Fishy Data</title>
-    <link>https://fishydata.netlify.app/projects/</link>
-    <description>Recent content in Projects on Fishy Data</description>
+    <title>Projects on Hugo Tania</title>
+    <link>https://example.com/projects/</link>
+    <description>Recent content in Projects on Hugo Tania</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://fishydata.netlify.app/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo Tania Theme</title>
-      <link>https://fishydata.netlify.app/projects/a_project/</link>
+      <link>https://example.com/projects/a_project/</link>
       <pubDate>Thu, 26 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://fishydata.netlify.app/projects/a_project/</guid>
+      <guid>https://example.com/projects/a_project/</guid>
       <description></description>
     </item>
     
