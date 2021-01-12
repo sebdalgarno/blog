@@ -1,1 +1,1 @@
-Some posts on R, fish movement, databases, dataviz and other computery things
+Some posts on R, fish movement, data science and other computery things
