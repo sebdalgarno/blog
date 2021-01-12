@@ -1,1 +1,1 @@
-Fish data can be fishy 
+Some posts on R, fish movement, databases, dataviz and other computery things
