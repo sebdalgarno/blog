@@ -1,13 +1,17 @@
-baseurl: "https://example.com"
+baseurl: "https://fishydata.netlify.app/"
 languageCode: "en-us"
-title: "Hugo Tania"
+title: "Fishy Data"
 theme: "hugo-tania"
+highlight: true
+highlight_languages: ["r", "latex"]
+enableEmoji: true
 
 params:
-  titleEmoji: ':fish:'
+  titleEmoji: ! "\U0001F41F" 
   socialOptions:
-    github: 
-    twitter: 
+    github: 'https://github.com/sebdalgarno'
+    twitter: 'https://twitter.com/sebdalgarno'
+    linkedin: 'https://www.linkedin.com/in/sebastian-dalgarno-739538131/'
 
 menu:
   header:

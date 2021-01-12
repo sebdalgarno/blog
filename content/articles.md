@@ -1,7 +1,7 @@
 ---
-date: "2020-11-26"
+date: "2021-01-10"
 layout: archives
-subtitle: Posts, tutorials, snippets, musings, and everything else.
+subtitle: Posts on R, fish movement, databases, dataviz and other computery things.
 title: Articles
 type: section
 ---
