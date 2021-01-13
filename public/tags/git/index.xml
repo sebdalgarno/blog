@@ -15,7 +15,7 @@
       <guid>https://fishydata.netlify.app/post/git-alias/</guid>
       <description>For years I have staged, committed and pushed via the RStudio Git interface.
 It works! But it can be time-consuming when you are doing it a lot. And it&amp;rsquo;s not very dreamy. And I&amp;rsquo;ve been trying to use my mouse less. It would be better to do this in the terminal.
-I found this solution on stackoverflow, which suggests staging and committing all files by running the following in the terminal.</description>
+I found this solution on stackoverflow, which suggests staging and committing all files by running the following in the terminal:</description>
     </item>
     
     <item>
