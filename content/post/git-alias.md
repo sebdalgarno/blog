@@ -5,7 +5,9 @@ description: A simple use case for setting up a git alias to stage, commit and p
 tags:
 - git
 - RStudio
-- R
+- r
+series: 
+- Workflow
 title: Pushing like a dream with git alias
 ---
 
