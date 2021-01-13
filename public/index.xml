@@ -25,7 +25,8 @@ git add -A &amp;amp;&amp;amp; git commit -m &amp;#34;rebuild site&amp;#34; We ca
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://fishydata.netlify.app/about/</guid>
-      <description>Hi 👋 I&amp;rsquo;m Seb Dalgarno. This is my blog for all things R, fish movement, statistics, data visualization, and various other data/computery things.
+      <description>Hi 👋 I&amp;rsquo;m Seb Dalgarno.
+This is my blog for all things R, fish movement, statistics, data visualization, and various other data/computery things.
 I&amp;rsquo;m a PhD student at the UNBC Freshwater Fish Ecology lab. We are using many years of acoustic telemetry data and Bayesian models to make inferences about White Sturgeon movement in the Columbia River. Formerly, I was a computational biologist at Poisson Consulting.
 Check out my personal or consulting website for more info.</description>
     </item>
