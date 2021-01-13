@@ -13,7 +13,7 @@
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://fishydata.netlify.app/post/git-alias/</guid>
-      <description>For years I have staged, committed and pushed via the RStudio Git interface. It works! But it can be time-consuming when you are doing it a lot. And is not very dreamy. And I&amp;rsquo;ve been trying to use my mouse less. My breaking point to find an alternative method was while building this blog (blogdown R package). Every time blogdown::build_site() is run many files are changed, all of which can be staged, committed and pushed at once without much thought.</description>
+      <description>For years I have staged, committed and pushed via the RStudio Git interface. It works! But it can be time-consuming when you are doing it a lot. And is not very dreamy. And I&amp;rsquo;ve been trying to use my mouse less. My breaking point to find an alternative method was while building this blog (with blogdown R package). Every time blogdown::build_site() is run many files are changed, all of which can be staged, committed and pushed at once without much thought.</description>
     </item>
     
     <item>
