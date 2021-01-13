@@ -1,7 +1,6 @@
 ---
-date: "2021-01-01"
-description: About Seb Dalgarno
-menu: main
+author: Seb Dalgarno
+date: "2017-08-06"
 title: About 
 ---
 

@@ -3,47 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://fishydata.netlify.app/blog/</loc>
+    <loc>/tags/git/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fishydata.netlify.app/</loc>
+    <loc>/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fishydata.netlify.app/tags/git/</loc>
+    <loc>/post/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fishydata.netlify.app/blog/git-alias/</loc>
+    <loc>/post/2021/01/12/pushing-like-a-dream-with-git-alias/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fishydata.netlify.app/tags/r/</loc>
+    <loc>/tags/r/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fishydata.netlify.app/tags/rstudio/</loc>
+    <loc>/tags/rstudio/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fishydata.netlify.app/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fishydata.netlify.app/about/</loc>
-    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+    <loc>/about/</loc>
+    <lastmod>2017-08-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fishydata.netlify.app/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
 </urlset>

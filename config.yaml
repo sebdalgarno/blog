@@ -1,48 +1,45 @@
-baseurl: https://fishydata.netlify.app
+baseurl: /
+languageCode: en-us
 title: Fishy Data
-author: Seb Dalgarno
-canonifyurls: yes
-languagecode: en
-theme: hugo-tanka
-enableEmoji: yes
-hasCJKLanguage: no
-pygmentsstyle: vs
-pygmentscodefences: yes
-ignoreFiles:
-  - \.Rmd$
-  - \.Rmarkdown$
-  - _cache$
-  - \.knit\.md$
-  - \.utf8\.md$
+titleEmoji: ! "\U0001F41F" 
+theme: "hugo-ivy"
+enableEmoji: true
+googleAnalytics: ""
+disqusShortname: ""
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
+preserveTaxonomyNames: true
+footnotereturnlinkcontents: ↩
+
+permalinks:
+  note: /note/:year/:month/:day/:slug/
+  post: /post/:year/:month/:day/:slug/
+
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "About"
+      url: "/about/"
+      weight: 2
+    - name: "Categories"
+      url: "/categories/"
+      weight: 3
+    - name: "Tags"
+      url: "/tags/"
+      weight: 4
+    - name: "Subscribe"
+      url: "/index.xml"
+
 params:
-  faviconfile: images/favicon.png
-  highlightjs: yes
-  highlightjslanguages:
-    - r
-    - python
-    - stan
-  progressively: no
-  sitename: Fishy Data
-  titleEmoji: ! "\U0001F41F" 
-  uselatex: yes
+  description: "A blog about R, fish movement and other data/computery things."
+  footer: "&copy; [Seb Dalgarno](https://sebdalgarno.netlify.app) 2021 | [Github](https://github.com/sebdalgarno) | [Twitter](https://twitter.com/sebdalgarno)"
+  highlightjsCDN: "//cdn.bootcss.com"
+  highlightjsLang: ["r", "yaml", "tex", "stan", "html"]
+  highlightjsTheme: "github"
+  highlightjsVersion: "9.12.0"
+
 markup:
   goldmark:
     renderer:
-      unsafe: yes
-menu:
-  primary:
-    - name: Home
-      url: /
-      weight: 1
-    - name: About
-      url: /about/
-      weight: 2
-    - name: GitHub
-      url: https://github.com/sebdalgarno
-      weight: 3
-    - name: Twitter
-      url: https://twitter.com/sebdalgarno
-      weight: 4
-    - name: Subscribe
-      url: /index.xml
-      weight: 5
+      unsafe: true
