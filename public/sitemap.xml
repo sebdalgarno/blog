@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://fishydata.netlify.app/projects/fwapgr/</loc>
+    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fishydata.netlify.app/projects/fwatlasbc/</loc>
+    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://fishydata.netlify.app/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -15,6 +25,11 @@
   
   <url>
     <loc>https://fishydata.netlify.app/post/</loc>
+    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fishydata.netlify.app/projects/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
