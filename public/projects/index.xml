@@ -6,13 +6,31 @@
     <description>Recent content in Projects on Fishy Data</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://fishydata.netlify.app/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fishydata.netlify.app/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo Tania Theme</title>
-      <link>https://fishydata.netlify.app/projects/a_project/</link>
-      <pubDate>Thu, 26 Nov 2020 00:00:00 +0000</pubDate>
+      <title>fwapgr</title>
+      <link>https://fishydata.netlify.app/projects/fwapgr/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fishydata.netlify.app/projects/a_project/</guid>
+      <guid>https://fishydata.netlify.app/projects/fwapgr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fwatlasbc</title>
+      <link>https://fishydata.netlify.app/projects/fwatlasbc/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fishydata.netlify.app/projects/fwatlasbc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tinter</title>
+      <link>https://fishydata.netlify.app/projects/tinter/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fishydata.netlify.app/projects/tinter/</guid>
       <description></description>
     </item>
     

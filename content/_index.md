@@ -1,1 +1,1 @@
-Some posts on R, fish movement, data science and other computery things
+Posts on R, fish movement, and other computery things by [Seb Dalgarno](https://sebdalgarno.netlify.app)

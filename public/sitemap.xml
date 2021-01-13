@@ -3,24 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://fishydata.netlify.app/projects/a_project/</loc>
-    <lastmod>2020-11-26T00:00:00+00:00</lastmod>
+    <loc>https://fishydata.netlify.app/projects/fwapgr/</loc>
+    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fishydata.netlify.app/articles/</loc>
-    <lastmod>2021-01-10T00:00:00+00:00</lastmod>
+    <loc>https://fishydata.netlify.app/projects/fwatlasbc/</loc>
+    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fishydata.netlify.app/projects/tinter/</loc>
+    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://fishydata.netlify.app/</loc>
-    <lastmod>2020-11-26T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://fishydata.netlify.app/projects/</loc>
-    <lastmod>2020-11-26T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fishydata.netlify.app/articles/</loc>
+    <lastmod>2021-01-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
