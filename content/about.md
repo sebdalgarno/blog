@@ -1,12 +1,14 @@
 ---
-date: "2020-01-01"
-description: A description of the page
+date: "2021-01-01"
+description: About Seb Dalgarno
 menu: main
-title: About Hugo Tanka
+title: About 
 ---
 
-Lorem ipsum dolor sit amet, ex has sale ullum corrumpit, sea dicam nostrum sensibus ad. Porro tritani persecuti te sed. Omittam dissentias pro ex. Atqui luptatum duo id. Eros minim eam ex, novum elitr accusam quo in. Nec ne audire euripidis, [mea qualisque consetetur cu](https://example.com). Suspendisse volutpat sem a risus euismod convallis.
+Hi :wave: I'm Seb Dalgarno. This is my blog for all things R, fish movement, statistics, data visualization, and various other data/computery things. 
 
-In modus congue feugait eos. In nec nonumy volutpat corrumpit, sea assentior quaerendum no, cum affert scripta ea. No nihil voluptaria pro. [Erat democritum mei no](https://example.com), homero quodsi aliquando id mel, ridens civibus molestiae et nam.
+I'm a PhD student at the UNBC [Freshwater Fish Ecology lab](https://www.ffishlab.ca/). We are using many years of acoustic telemetry data and Bayesian models to make inferences about White Sturgeon movement in the Columbia River. Formerly, I was a computational biologist at [Poisson Consulting](https://www.poissonconsulting.ca). 
 
-Ea eam postea facilisi. Nullam forensibus consequuntur usu ea, no ius consul delectus periculis. Eam veri numquam an. Et partiendo gubergren eam. Quod iudicabit has ex, eam diam facilisi eu, elitr aliquip no eum.
+Check out [my personal](htpps://www.sebdalgarno.netlify.app) or [consulting website](https://www.northbeachconsulting.ca/) for more info. Also check out some recordings from my band [Rusty Mould and the Sugar Agates](https://rustymouldandthesugaragates.bandcamp.com/)!
+
+Thanks for stopping by.

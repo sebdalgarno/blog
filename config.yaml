@@ -23,6 +23,8 @@ params:
     - stan
   progressively: no
   sitename: Fishy Data
+  titleEmoji: ! "\U0001F41F" 
+  titleEmoji2: ! "\U0001F4C8" 
   uselatex: yes
 markup:
   goldmark:

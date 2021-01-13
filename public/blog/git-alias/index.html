@@ -48,8 +48,21 @@
 <div class="mt-xl header">
     <div class="container">
         <div class="row justify-content-center">
+             
+                    <span class="name" style="margin: 0px !important;
+  display: inline !important;
+  height: auto;
+  font-size: 30px;
+  vertical-align: middle;
+  line-height: 2;">
+                        🐟
+
+                    </span>
+                    
             <div class="col-auto">
+                
                 <a href="https://example.com">
+                   
                     <h1 class="name">Fishy Data</h1>
                 </a>
             </div>
@@ -159,19 +172,8 @@ width: 80%;"/></p>
 </code></pre><p>From now on (and forever), we can stage, commit and push all changes with two simple commands:</p>
 <pre><code>git coa 'rebuild site'
 </code></pre><pre><code>git p
-</code></pre><p>To make this even dreamier I set up a customized keyboard shortcut<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> <kbd>Cmd</kbd>-<kbd>3</kbd> to move my cursor to the RStudio terminal.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> The advantage of using the RStudio terminal and not your regular terminal (or iterm2) is that it is automatically drilled down into the directory of your project (hence, switching between projects does not require moving into another directory).</p>
+</code></pre><p>To make this even dreamier I set up a customized keyboard shortcut<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> <kbd>Cmd</kbd>-<kbd>3</kbd> to move my cursor to the RStudio terminal.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> The advantage of using the RStudio terminal and not your Terminal (or iterm2) app is that it is automatically drilled down into the directory of your R project (and when switching between projects, this prevents the need to switch directory).</p>
 <p>No more using the mouse! 🎉🎉🎉</p>
-
-<div class="mermaid" align="center">
-stateDiagram-v2
-  open: Open Door
-  closed: Closed Door
-  locked: Locked Door
-  open   --> closed: Close
-  closed --> locked: Lock
-  locked --> closed: Unlock
-  closed --> open: Open
-</div>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>

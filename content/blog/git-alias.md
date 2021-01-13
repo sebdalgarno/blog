@@ -47,20 +47,11 @@ git coa 'rebuild site'
 git p
 ```
 
-To make this even dreamier I set up a customized keyboard shortcut[^1] <kbd>Cmd</kbd>-<kbd>3</kbd> to move my cursor to the RStudio terminal.[^2] The advantage of using the RStudio terminal and not your regular terminal (or iterm2) is that it is automatically drilled down into the directory of your project (hence, switching between projects does not require moving into another directory).
+To make this even dreamier I set up a customized keyboard shortcut[^1] <kbd>Cmd</kbd>-<kbd>3</kbd> to move my cursor to the RStudio terminal.[^2] The advantage of using the RStudio terminal and not your Terminal (or iterm2) app is that it is automatically drilled down into the directory of your R project (and when switching between projects, this prevents the need to switch directory).
  
 No more using the mouse! 🎉🎉🎉 
 
 [^1]: Check out [this great tutorial](https://support.rstudio.com/hc/en-us/articles/206382178-Customizing-Keyboard-Shortcuts) on customizing keyboard shortcuts in RStudio.
 [^2]: I use <kbd>Cmd</kbd>-<kbd>1</kbd> to move cursor to script and <kbd>Cmd</kbd>-<kbd>2</kbd> to move cursor to console.
 
-{{< mermaid >}}
-stateDiagram-v2
-  open: Open Door
-  closed: Closed Door
-  locked: Locked Door
-  open   --> closed: Close
-  closed --> locked: Lock
-  locked --> closed: Unlock
-  closed --> open: Open
-{{< /mermaid >}}
+
