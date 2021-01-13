@@ -1,31 +1,48 @@
-baseurl: "https://fishydata.netlify.app/"
-languageCode: "en-us"
-title: "Fishy Data"
-theme: "hugo-tania"
-highlight: true
-highlight_languages: ["r", "latex"]
-enableEmoji: true
-
+baseurl: https://fishydata.netlify.app
+title: Fishy Data
+author: Seb Dalgarno
+canonifyurls: yes
+languagecode: en
+theme: hugo-tanka
+enableEmoji: yes
+hasCJKLanguage: no
+pygmentsstyle: vs
+pygmentscodefences: yes
+ignoreFiles:
+  - \.Rmd$
+  - \.Rmarkdown$
+  - _cache$
+  - \.knit\.md$
+  - \.utf8\.md$
 params:
+  faviconfile: images/favicon.png
+  highlightjs: yes
+  highlightjslanguages:
+    - r
+    - python
+    - stan
+  progressively: no
+  sitename: Fishy Data
   titleEmoji: ! "\U0001F41F" 
-  socialOptions:
-    github: 'https://github.com/sebdalgarno'
-    twitter: 'https://twitter.com/sebdalgarno'
-    linkedin: 'https://www.linkedin.com/in/sebastian-dalgarno-739538131/'
-    email: 'seb.dalgarno@gmail.com'
-
-menu:
-  header:
-    - name: Articles
-      url: "/articles/"
-  footer:
-    - name: RSS
-      url: "/index.xml"
-
+  uselatex: yes
 markup:
-  highlight:
-    noClasses: false
-    lineNos: true
   goldmark:
     renderer:
-      unsafe: true
+      unsafe: yes
+menu:
+  primary:
+    - name: Home
+      url: /
+      weight: 1
+    - name: About
+      url: /about/
+      weight: 2
+    - name: GitHub
+      url: https://github.com/sebdalgarno
+      weight: 3
+    - name: Twitter
+      url: https://twitter.com/sebdalgarno
+      weight: 4
+    - name: Subscribe
+      url: /index.xml
+      weight: 5
