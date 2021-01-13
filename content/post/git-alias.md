@@ -11,14 +11,14 @@ series:
 title: Pushing like a dream with git alias
 ---
 
-For years I have staged, committed and pushed via the RStudio Git interface.
+For years I have staged, committed and pushed changes with the RStudio Git interface.
 
 <img src="https://media.giphy.com/media/IU1hzU7LuKZZhsVsYU/giphy.gif" style="display: block;
   margin-left: auto;
   margin-right: auto;
   width: 80%;"/>
   
-  It works! But it can be time-consuming when you are doing it a lot. And it's not very dreamy. And I've been trying to use my mouse less. It would be better to do this in the terminal.
+It works! But it can be time-consuming when you are doing it a lot. And I've been trying to use my mouse less. It would be better to do this in the terminal.
 
 I found [this solution](https://stackoverflow.com/questions/2419249/how-can-i-stage-and-commit-all-files-including-newly-added-files-using-a-singl) on stackoverflow, which suggests staging and committing all files by running the following in the terminal:
 
