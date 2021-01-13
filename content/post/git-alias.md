@@ -9,7 +9,7 @@ tags:
 title: Pushing like a dream with git alias
 ---
 
-For years I have staged, committed and pushed via the RStudio Git interface. It works! But it can be time-consuming when you are doing it a lot. And is not very dreamy. I've also been trying to use my mouse less. My breaking point to find an alternative method was while building this blog (blogdown R package). Every time `blogdown::build_site()` is run many files are changed, all of which can be staged, committed and pushed at once without much thought. 
+For years I have staged, committed and pushed via the RStudio Git interface. It works! But it can be time-consuming when you are doing it a lot. And is not very dreamy. And I've been trying to use my mouse less. My breaking point to find an alternative method was while building this blog (blogdown R package). Every time `blogdown::build_site()` is run many files are changed, all of which can be staged, committed and pushed at once without much thought. 
 
 <img src="https://media.giphy.com/media/V2nkKhmFoblp408Ar9/giphy.gif" width="500" height="500"/>
 
