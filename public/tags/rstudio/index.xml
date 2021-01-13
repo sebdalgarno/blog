@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RStudio on Fishy Data</title>
-    <link>https://example.com/tags/rstudio/</link>
+    <link>https://fishydata.netlify.app/tags/rstudio/</link>
     <description>Recent content in RStudio on Fishy Data</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/rstudio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fishydata.netlify.app/tags/rstudio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pushing like a dream with git alias</title>
-      <link>https://example.com/blog/git-alias/</link>
+      <link>https://fishydata.netlify.app/blog/git-alias/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/blog/git-alias/</guid>
+      <guid>https://fishydata.netlify.app/blog/git-alias/</guid>
       <description>For years I have staged, committed and pushed changes with the RStudio Git interface.
 It works! But it can be time-consuming when you are doing it a lot. And I&amp;rsquo;ve been trying to use my mouse less. It would be better to do this in the terminal.
 I found this solution on stackoverflow, which suggests staging and committing all files by running the following in the terminal:

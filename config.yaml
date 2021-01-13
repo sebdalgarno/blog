@@ -1,6 +1,6 @@
-baseurl: https://example.com
+baseurl: https://fishydata.netlify.app
 title: Fishy Data
-author: Nan Xiao
+author: Seb Dalgarno
 canonifyurls: yes
 languagecode: en
 theme: hugo-tanka
@@ -24,7 +24,6 @@ params:
   progressively: no
   sitename: Fishy Data
   titleEmoji: ! "\U0001F41F" 
-  titleEmoji2: ! "\U0001F4C8" 
   uselatex: yes
 markup:
   goldmark:
@@ -39,10 +38,10 @@ menu:
       url: /about/
       weight: 2
     - name: GitHub
-      url: https://github.com/nanxstats
+      url: https://github.com/sebdalgarno
       weight: 3
     - name: Twitter
-      url: https://twitter.com/nanxstats
+      url: https://twitter.com/sebdalgarno
       weight: 4
     - name: Subscribe
       url: /index.xml

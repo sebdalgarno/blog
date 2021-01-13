@@ -3,47 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://example.com/blog/</loc>
+    <loc>https://fishydata.netlify.app/blog/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/</loc>
+    <loc>https://fishydata.netlify.app/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tags/git/</loc>
+    <loc>https://fishydata.netlify.app/tags/git/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/blog/git-alias/</loc>
+    <loc>https://fishydata.netlify.app/blog/git-alias/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tags/r/</loc>
+    <loc>https://fishydata.netlify.app/tags/r/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tags/rstudio/</loc>
+    <loc>https://fishydata.netlify.app/tags/rstudio/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tags/</loc>
+    <loc>https://fishydata.netlify.app/tags/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/about/</loc>
+    <loc>https://fishydata.netlify.app/about/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/categories/</loc>
+    <loc>https://fishydata.netlify.app/categories/</loc>
   </url>
   
 </urlset>
