@@ -1,1 +1,0 @@
-Posts on R, fish movement, and other computery things by <ins>[Seb Dalgarno](https://sebdalgarno.netlify.app)</ins>

@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Pushing like a dream with git alias - Fishy Data </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="A simple use case for setting up a git alias to stage, commit and push all files from RStudio terminal." />
+    <meta property="og:site_name" content="Fishy Data" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://example.com/blog/git-alias/" />
+    <meta property="og:title" content="Pushing like a dream with git alias" />
+    <meta property="og:image" content="https://example.com" />
+    <meta property="og:description" content="A simple use case for setting up a git alias to stage, commit and push all files from RStudio terminal." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:title" content="Pushing like a dream with git alias" />
+    <meta name="twitter:description" content="A simple use case for setting up a git alias to stage, commit and push all files from RStudio terminal." />
+    <meta name="twitter:image" content="https://example.com" />
+
+    <link rel="canonical" href="https://example.com/blog/git-alias/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://example.comcss/custom.css" />
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github-gist.min.css" integrity="sha512-od7JLoOTxM8w/HSKGzP9Kexc20K9p/M2zxSWsd7H1e4Ctf+8SQFtCWEZnW5u6ul5ehSECa5QmOk9ju2nQMmlVA==" crossorigin="anonymous" />
+    
+
+    
+
+    <link rel="shortcut icon"
+        href="https://example.com/images/favicon.png">
+
+    
+    <link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml" title="Fishy Data" />
+    
+</head>
+
+<body>
+    
+<div class="mt-xl header">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <a href="https://example.com">
+                    <h1 class="name">Fishy Data</h1>
+                </a>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <ul class="nav nav-primary">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://example.com/">
+                        
+                        Home
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://example.com/about/">
+                        
+                        About
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/nanxstats">
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com/nanxstats">
+                        
+                        Twitter
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://example.com/index.xml">
+                        
+                        Subscribe
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-8">
+                <h1 class="mx-0 mx-md-4 blog-post-title">Pushing like a dream with git alias</h1>
+
+                <div class="mb-md-4 meta">
+                    
+                    
+                    <span class="author" title="Seb Dalgarno">
+                        Seb Dalgarno
+                    </span>
+                    
+                    
+
+                    <span class="date middot" title='Tue Jan 12 2021 00:00:00 UTC'>
+                        2021-01-12
+                    </span>
+
+                    <span class="reading-time middot">
+                        2 min read
+                    </span>
+
+                    <div class="d-none d-md-inline tags">
+                        <ul class="list-unstyled d-inline">
+                            
+                            <li class="d-inline middot">
+                                <a href="https://example.com/tags/git">git</a>
+                            </li>
+                            
+                            <li class="d-inline middot">
+                                <a href="https://example.com/tags/rstudio">RStudio</a>
+                            </li>
+                            
+                            <li class="d-inline middot">
+                                <a href="https://example.com/tags/r">r</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="markdown blog-post-content">
+                    
+    <p>For years I have staged, committed and pushed changes with the RStudio Git interface.</p>
+<p><img src="https://media.giphy.com/media/IU1hzU7LuKZZhsVsYU/giphy.gif" style="display: block;
+margin-left: auto;
+margin-right: auto;
+width: 80%;"/></p>
+<p>It works! But it can be time-consuming when you are doing it a lot. And I&rsquo;ve been trying to use my mouse less. It would be better to do this in the terminal.</p>
+<p>I found <a href="https://stackoverflow.com/questions/2419249/how-can-i-stage-and-commit-all-files-including-newly-added-files-using-a-singl">this solution</a> on stackoverflow, which suggests staging and committing all files by running the following in the terminal:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">git add -A &amp;&amp; git commit -m <span style="color:#a31515">&#34;rebuild site&#34;</span>
+</code></pre></div><p>We can push like this:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">git push
+</code></pre></div><p>However, the real wins are gained by using git aliases. To save having to type (and remember) all of the above, we can set up a git alias &lsquo;coa&rsquo; for stage/commit all:</p>
+<pre><code>git config --global alias.coa &quot;!git add -A &amp;&amp; git commit -m&quot;
+</code></pre><p>and &lsquo;p&rsquo; for push:</p>
+<pre><code>git config --global alias.p &quot;push&quot;
+</code></pre><p>From now on (and forever), we can stage, commit and push all changes with two simple commands:</p>
+<pre><code>git coa 'rebuild site'
+</code></pre><pre><code>git p
+</code></pre><p>To make this even dreamier I set up a customized keyboard shortcut<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> <kbd>Cmd</kbd>-<kbd>3</kbd> to move my cursor to the RStudio terminal.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> The advantage of using the RStudio terminal and not your regular terminal (or iterm2) is that it is automatically drilled down into the directory of your project (hence, switching between projects does not require moving into another directory).</p>
+<p>No more using the mouse! 🎉🎉🎉</p>
+
+<div class="mermaid" align="center">
+stateDiagram-v2
+  open: Open Door
+  closed: Closed Door
+  locked: Locked Door
+  open   --> closed: Close
+  closed --> locked: Lock
+  locked --> closed: Unlock
+  closed --> open: Open
+</div>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Check out <a href="https://support.rstudio.com/hc/en-us/articles/206382178-Customizing-Keyboard-Shortcuts">this great tutorial</a> on customizing keyboard shortcuts in RStudio. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>I use <kbd>Cmd</kbd>-<kbd>1</kbd> to move cursor to script and <kbd>Cmd</kbd>-<kbd>2</kbd> to move cursor to console. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+
+
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="comments">
+    <div class="py-3 content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-lg-8">
+                    <div class="comments">
+                        <script src="https://utteranc.es/client.js" repo=""
+                            issue-term="pathname" label="comment" theme="github-light" crossorigin="anonymous" async>
+                            </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    
+
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" defer></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" defer></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/stan.min.js" defer></script>
+        
+        <script>
+            window.addEventListener('load', function() {
+                hljs.initHighlighting();
+            }, true);
+        </script>
+    
+
+    
+
+    
+    
+        
+
+    
+</body>
+
+</html>
