@@ -16,5 +16,32 @@
       <description>For years I have staged, committed and pushed via the RStudio Git interface. It works! But it can be time-consuming when you are doing it a lot. And is not very dreamy. And I&amp;rsquo;ve been trying to use my mouse less. My breaking point to find an alternative method was while building this blog (blogdown R package). Every time blogdown::build_site() is run many files are changed, all of which can be staged, committed and pushed at once without much thought.</description>
     </item>
     
+    <item>
+      <title>Test</title>
+      <link>https://fishydata.netlify.app/post/test/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://fishydata.netlify.app/post/test/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Test2</title>
+      <link>https://fishydata.netlify.app/post/test2/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://fishydata.netlify.app/post/test2/</guid>
+      <description>hi</description>
+    </item>
+    
+    <item>
+      <title>Test3</title>
+      <link>https://fishydata.netlify.app/post/test3/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://fishydata.netlify.app/post/test3/</guid>
+      <description>❤️</description>
+    </item>
+    
   </channel>
 </rss>

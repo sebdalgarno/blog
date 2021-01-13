@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>https://fishydata.netlify.app/projects/tinter/</loc>
+    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://fishydata.netlify.app/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -60,6 +65,32 @@
   
   <url>
     <loc>https://fishydata.netlify.app/categories/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fishydata.netlify.app/categories/git/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fishydata.netlify.app/categories/r/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fishydata.netlify.app/post/test/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fishydata.netlify.app/post/test2/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fishydata.netlify.app/post/test3/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>
