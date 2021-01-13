@@ -99,10 +99,10 @@ li {
 /* Links */
 
 a {
-  color: #2563EB;
+  color: #111827;
   text-decoration: none;
   padding-bottom: 2px;
-  border-bottom: 0px solid #9CA3AF;
+  border-bottom: 1px solid #9CA3AF;
 }
 
 a:hover {

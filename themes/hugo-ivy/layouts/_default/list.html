@@ -11,7 +11,7 @@
   {{ range (where ($.Scratch.Get "pages") "Section" "!=" "") }}
   <li style="margin-bottom: 1em;">
     <span class="date" style="color: #6B7280; margin-right: 1rem;
-">{{ .Date.Format "Jan 2, 2006" }}</span>
+">{{ .Date.Format "2006/01/02" }}</span>
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
   </li>
   {{ end }}
