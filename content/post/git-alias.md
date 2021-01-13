@@ -8,6 +8,6 @@ tags:
 title: Git aliases - they're great
 ---
 
-For years I have staged, committed and pushed via the RStudio Git interface. It works! But it can be time-consuming when you are doing it a lot. My breaking point to find an alternative method was actually building this blog with the blogdown R package. Every time `blogdown::build_site()` is run many files are changed, all of which can be staged, commited and pushed at once without much further thought. 
+For years I have staged, committed and pushed via the RStudio Git interface. It works! But it can be time-consuming when you are doing it a lot. I'm also trying to reduce my usage of the mouse. My breaking point to find an alternative method was actually building this blog with the blogdown R package. Every time `blogdown::build_site()` is run many files are changed, all of which can be staged, commited and pushed at once without much further thought. 
 
-I stumbled across [this stack overflow question](https://stackoverflow.com/questions/2419249/how-can-i-stage-and-commit-all-files-including-newly-added-files-using-a-singl), which suggests using git aliases.
+I stumbled across [this stack overflow question](https://stackoverflow.com/questions/2419249/how-can-i-stage-and-commit-all-files-including-newly-added-files-using-a-singl), which suggests using git aliases. 
