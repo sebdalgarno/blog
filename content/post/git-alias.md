@@ -11,7 +11,7 @@ title: Pushing like a dream with git alias
 
 For years I have staged, committed and pushed via the RStudio Git interface.
 
-<img src="https://media.giphy.com/media/V2nkKhmFoblp408Ar9/giphy.gif" style="display: block;
+<img src="https://media.giphy.com/media/IU1hzU7LuKZZhsVsYU/giphy.gif" style="display: block;
   margin-left: auto;
   margin-right: auto;
   width: 80%;"/>
