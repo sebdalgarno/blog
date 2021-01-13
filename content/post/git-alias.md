@@ -9,29 +9,30 @@ tags:
 title: Pushing like a dream with git alias
 ---
 
-For years I have staged, committed and pushed via the RStudio Git interface. It works! But it can be time-consuming when you are doing it a lot. And it's not very dreamy. And I've been trying to use my mouse less. It would be better to do this in the terminal.
+For years I have staged, committed and pushed via the RStudio Git interface.
 
 <img src="https://media.giphy.com/media/V2nkKhmFoblp408Ar9/giphy.gif" style="display: block;
   margin-left: auto;
   margin-right: auto;
   width: 80%;"/>
+  
+  It works! But it can be time-consuming when you are doing it a lot. And it's not very dreamy. And I've been trying to use my mouse less. It would be better to do this in the terminal.
 
-While searching for a solution, I stumbled across [this stack overflow question](https://stackoverflow.com/questions/2419249/how-can-i-stage-and-commit-all-files-including-newly-added-files-using-a-singl), which suggests doing this from the command line to stage and commit all files
+I found [this solution](https://stackoverflow.com/questions/2419249/how-can-i-stage-and-commit-all-files-including-newly-added-files-using-a-singl) on stackoverflow, which suggests staging and committing all files by running the following in the terminal.
 
 ```
 git add -A && git commit -m "rebuild site"
 ```
-and push
+We can push like this
 ```
 git push
 ```
 
-To save having to type (and remember) all of this, we can set up a git alias. In the terminal, type
+However, the real wins are gained by using git aliases. To save having to type (and remember) all of the above, we can set up a git alias 'coa' for stage/commit all:
 ```
 git config --global alias.coa "!git add -A && git commit -m"
 ```
-The alias 'coa' can now be used for staging and committing all files. We can also set up an alias - p - for pushing
-
+and 'p' for push
 ```
 git config --global alias.p "push"
 ```
