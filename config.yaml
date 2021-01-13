@@ -32,7 +32,7 @@ menu:
       url: "/index.xml"
 
 params:
-  description: "A blog about R, fish movement and other data/computery things."
+  description: "A blog about R, fish movement and other computery things."
   footer: "&copy; [Seb Dalgarno](https://sebdalgarno.netlify.app) 2021 | [Github](https://github.com/sebdalgarno) | [Twitter](https://twitter.com/sebdalgarno)"
   highlightjsCDN: "//cdn.bootcss.com"
   highlightjsLang: ["r", "yaml", "tex", "stan", "html"]
