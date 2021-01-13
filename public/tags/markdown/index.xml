@@ -6,7 +6,17 @@
     <description>Recent content in markdown on Fishy Data</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://fishydata.netlify.app/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fishydata.netlify.app/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git aliases - they&#39;re great</title>
+      <link>https://fishydata.netlify.app/post/git-alias/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fishydata.netlify.app/post/git-alias/</guid>
+      <description>For years I have staged, committed and pushed via the RStudio Git interface. It works! But it can be time-consuming when you are doing it a lot. My breaking point to find an alternative method was actually building this blog with the blogdown R package. Every time blogdown::build_site() is run many files are changed, all of which can be staged, commited and pushed at once without much further thought.
+I stumbled across this stack overflow question, which suggests using git aliases.</description>
+    </item>
+    
     <item>
       <title>Markdown Syntax Guide</title>
       <link>https://fishydata.netlify.app/post/markdown-syntax/</link>
@@ -23,15 +33,6 @@
       
       <guid>https://fishydata.netlify.app/post/placeholder-text/</guid>
       <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>test</title>
-      <link>https://fishydata.netlify.app/post/test/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://fishydata.netlify.app/post/test/</guid>
-      <description>Hi! </description>
     </item>
     
   </channel>

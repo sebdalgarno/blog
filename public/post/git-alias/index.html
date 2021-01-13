@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="theme-color" content="dark">
-    <title> Math Typesetting | Fishy Data</title>
+    <title> Git aliases - they&#39;re great | Fishy Data</title>
     
     
     
@@ -44,12 +44,16 @@
         <header class="article-header">
             <div class="thumb">
                 <div>
-                    <h1>Math Typesetting</h1>
+                    <h1>Git aliases - they&#39;re great</h1>
                     <div class="post-meta">
                         <div>
-                            By Hugo Authors on <time>March 08, 2019</time>
+                            By Seb Dalgarno on <time>January 12, 2021</time>
                         </div>
                         <div class="tags">
+                            
+                            <a href="/tags/markdown/">markdown</a>
+                            
+                            <a href="/tags/text/">text</a>
                             
                         </div>
                     </div>
@@ -59,37 +63,9 @@
     </article>
 
     <div class="article-post">
-    <p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
-<p>In this example we will be using <a href="https://katex.org/">KaTeX</a></p>
-<ul>
-<li>Create a partial under <code>/layouts/partials/math.html</code></li>
-<li>Within this partial reference the <a href="https://katex.org/docs/autorender.html">Auto-render Extension</a> or host these scripts locally.</li>
-<li>Include the partial in your templates like so:</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">{{</span> <span class="k">if</span> or .Params.math .Site.Params.math <span class="o">}}</span>
-<span class="o">{{</span> partial <span class="s2">&#34;math.html&#34;</span> . <span class="o">}}</span>
-<span class="o">{{</span> end <span class="o">}}</span>
-</code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>To enable KaTex globally set the parameter <code>math</code> to <code>true</code> in a project&rsquo;s configuration</li>
-<li>To enable KaTex on a per page basis include the parameter <code>math: true</code> in content files</li>
-</ul>
-<p><strong>Note:</strong> Use the online reference of <a href="https://katex.org/docs/supported.html">Supported TeX Functions</a></p>
+    <p>For years I have staged, committed and pushed via the RStudio Git interface. It works! But it can be time-consuming when you are doing it a lot. My breaking point to find an alternative method was actually building this blog with the blogdown R package. Every time <code>blogdown::build_site()</code> is run many files are changed, all of which can be staged, commited and pushed at once without much further thought.</p>
+<p>I stumbled across <a href="https://stackoverflow.com/questions/2419249/how-can-i-stage-and-commit-all-files-including-newly-added-files-using-a-singl">this stack overflow question</a>, which suggests using git aliases.</p>
 
-<h3 id="examples">Examples</h3>
-
-<p>Block math:
-$$
-\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
-$$</p>
     </div>
 </div>
 
@@ -97,17 +73,12 @@ $$</p>
     
     <nav class="flex container suggested">
         
-        <a rel="prev" href="/post/emoji-support/" title="Previous post (older)">
+        <a rel="prev" href="/post/markdown-syntax/" title="Previous post (older)">
             <span>Previous</span>
-            Emoji Support
+            Markdown Syntax Guide
             </a>
         
         
-        
-        <a rel="next" href="/post/placeholder-text/" title="Next post (newer)">
-            <span>Next</span>
-            Placeholder Text
-            </a> 
         
     </nav>
     
