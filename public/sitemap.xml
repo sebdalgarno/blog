@@ -34,17 +34,17 @@
   </url>
   
   <url>
-    <loc>https://fishydata.netlify.app/post/git-alias/</loc>
-    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://fishydata.netlify.app/post/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://fishydata.netlify.app/projects/</loc>
+    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fishydata.netlify.app/post/git-alias/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   

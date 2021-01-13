@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="theme-color" content="dark">
-    <title> Git aliases - push like a dream | Fishy Data</title>
+    <title> Pushing like a dream with git alias | Fishy Data</title>
     
     
     
@@ -44,7 +44,7 @@
         <header class="article-header">
             <div class="thumb">
                 <div>
-                    <h1>Git aliases - push like a dream</h1>
+                    <h1>Pushing like a dream with git alias</h1>
                     <div class="post-meta">
                         <div>
                             By Seb Dalgarno on <time>January 12, 2021</time>
@@ -65,7 +65,7 @@
     </article>
 
     <div class="article-post">
-    <p>For years I have staged, committed and pushed via the RStudio Git interface. It works! But it can be time-consuming when you are doing it a lot. I&rsquo;ve also been trying to use my mouse less. My breaking point to find an alternative method was while building this blog (blogdown R package). Every time <code>blogdown::build_site()</code> is run many files are changed, all of which can be staged, committed and pushed at once without much thought.</p>
+    <p>For years I have staged, committed and pushed via the RStudio Git interface. It works! But it can be time-consuming when you are doing it a lot. And is not very dreamy. I&rsquo;ve also been trying to use my mouse less. My breaking point to find an alternative method was while building this blog (blogdown R package). Every time <code>blogdown::build_site()</code> is run many files are changed, all of which can be staged, committed and pushed at once without much thought.</p>
 <img src="https://media.giphy.com/media/V2nkKhmFoblp408Ar9/giphy.gif" width="500" height="500"/>
 <p>I stumbled across <a href="https://stackoverflow.com/questions/2419249/how-can-i-stage-and-commit-all-files-including-newly-added-files-using-a-singl">this stack overflow question</a>, which suggests doing this from the command line to stage and commit all files</p>
 <pre><code>git add -A &amp;&amp; git commit -m &quot;rebuild site&quot;
@@ -78,7 +78,7 @@
 </code></pre><p>From now on (and forever), we can stage, commit and push all changes with two simple commands:</p>
 <pre><code>git coa 'rebuild site'
 </code></pre><pre><code>git p
-</code></pre><p>To make this even smoother I set up a customized keyboard shortcut (see <a href="https://support.rstudio.com/hc/en-us/articles/206382178-Customizing-Keyboard-Shortcuts">here</a> for more info) <kbd>Cmd</kbd>-<kbd>3</kbd> to jump my cursor to the RStudio terminal. The advantage of using the RStudio terminal and not your regular terminal (or iterm2) is that it is automatically drilled down into the directory of your project (hence, switching between projects does not require moving into another directory).</p>
+</code></pre><p>To make this even dreamier I set up a customized keyboard shortcut (see <a href="https://support.rstudio.com/hc/en-us/articles/206382178-Customizing-Keyboard-Shortcuts">here</a> for more info) <kbd>Cmd</kbd>-<kbd>3</kbd> to move my cursor to the RStudio terminal. The advantage of using the RStudio terminal and not your regular terminal (or iterm2) is that it is automatically drilled down into the directory of your project (hence, switching between projects does not require moving into another directory).</p>
 <p>No more using the mouse! 🎉🎉🎉</p>
 
     </div>

@@ -6,10 +6,10 @@ tags:
 - git
 - RStudio
 - R
-title: Git aliases - push like a dream
+title: Pushing like a dream with git alias
 ---
 
-For years I have staged, committed and pushed via the RStudio Git interface. It works! But it can be time-consuming when you are doing it a lot. I've also been trying to use my mouse less. My breaking point to find an alternative method was while building this blog (blogdown R package). Every time `blogdown::build_site()` is run many files are changed, all of which can be staged, committed and pushed at once without much thought. 
+For years I have staged, committed and pushed via the RStudio Git interface. It works! But it can be time-consuming when you are doing it a lot. And is not very dreamy. I've also been trying to use my mouse less. My breaking point to find an alternative method was while building this blog (blogdown R package). Every time `blogdown::build_site()` is run many files are changed, all of which can be staged, committed and pushed at once without much thought. 
 
 <img src="https://media.giphy.com/media/V2nkKhmFoblp408Ar9/giphy.gif" width="500" height="500"/>
 
@@ -41,6 +41,6 @@ git coa 'rebuild site'
 git p
 ```
 
-To make this even smoother I set up a customized keyboard shortcut (see [here](https://support.rstudio.com/hc/en-us/articles/206382178-Customizing-Keyboard-Shortcuts) for more info) <kbd>Cmd</kbd>-<kbd>3</kbd> to jump my cursor to the RStudio terminal. The advantage of using the RStudio terminal and not your regular terminal (or iterm2) is that it is automatically drilled down into the directory of your project (hence, switching between projects does not require moving into another directory).
+To make this even dreamier I set up a customized keyboard shortcut (see [here](https://support.rstudio.com/hc/en-us/articles/206382178-Customizing-Keyboard-Shortcuts) for more info) <kbd>Cmd</kbd>-<kbd>3</kbd> to move my cursor to the RStudio terminal. The advantage of using the RStudio terminal and not your regular terminal (or iterm2) is that it is automatically drilled down into the directory of your project (hence, switching between projects does not require moving into another directory).
  
 No more using the mouse! 🎉🎉🎉 
