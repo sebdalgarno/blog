@@ -1,5 +1,5 @@
 ---
-title: A (slightly modified) blogdown blog with hugo-ivy theme
+title: A (modified) blogdown blog with hugo-ivy theme
 author: Seb
 date: '2021-01-13'
 slug: a-slightly-modified-blogdown-blog-with-yihui-hugo-ivy-theme
@@ -54,14 +54,14 @@ the colour of the title and subtitle,
   color: #6B7280;
 }
 ```
-and changed the color and margin of the timestamps next to the blog titles by adding CSS via the style argument in `./themes/hugo-ivy/layouts/partials/list.html`(since the date class did not appear to exist in `style.css` file).
+and changed the format, color and margin of the timestamps next to the blog titles in the `./themes/hugo-ivy/layouts/partials/list.html` file.
 
 ```html
 <ul>
   {{ range (where ($.Scratch.Get "pages") "Section" "!=" "") }}
   <li style="margin-bottom: 1em;">
     <span class="date" style="color: #6B7280; margin-right: 1rem;
-">{{ .Date.Format "2006/01/02" }}</span>
+">{{ .Date.Format "2006-01-02" }}</span>
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
   </li>
   {{ end }}
