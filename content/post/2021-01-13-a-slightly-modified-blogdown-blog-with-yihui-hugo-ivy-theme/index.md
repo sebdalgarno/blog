@@ -54,7 +54,7 @@ the colour of the title and subtitle,
   color: #6B7280;
 }
 ```
-and changed the format, color and margin of the timestamps next to the blog titles in the `./themes/hugo-ivy/layouts/partials/list.html` file.
+and changed the format (from xxxx/xx/xx to xxxx-xx-xx), color and margin of the timestamps next to the blog titles in the `./themes/hugo-ivy/layouts/partials/list.html` file.
 
 ```html
 <ul>
