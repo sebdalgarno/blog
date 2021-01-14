@@ -14,11 +14,13 @@ tags:
   - r
 ---
 
-I made this blog with [blogdown](https://bookdown.org/yihui/blogdown/). blogdown is an R package by the awesome [Yihui Xie](https://yihui.org/en/about/) that allows you to combine [Hugo](https://gohugo.io/) and Rmarkdown. For example, if you check out Joe Thorley's [sweet blog](https://www.joethorley.io/) and [this post](https://www.joethorley.io/post/2019/exponential-growth/) for example, you can see that it is great for demonstrate R code and generate output from that code to explain analyses and statistical concepts. Even if you aren't using R though, it is just really sweet to make posts in plain markdown. 
+## Selecting a theme
+I made this blog with [blogdown](https://bookdown.org/yihui/blogdown/). blogdown is an R package by the awesome [Yihui Xie](https://yihui.org/en/about/) that allows you to combine [Hugo](https://gohugo.io/) and Rmarkdown. For example, if you check out Joe Thorley's [sweet blog](https://www.joethorley.io/) and [this post](https://www.joethorley.io/post/2019/exponential-growth/), you can see that it is great for demonstrating R code and generating output from that code to explain analyses and statistical concepts. Even if you aren't using R though, it is just really sweet to make posts in plain markdown. 
 
-I spent a while choosing a theme and eventually settled on yihui's [hugo-ivy theme](https://github.com/yihui/hugo-ivy). Note there is no documentation for this theme so it is useful to have a bit of web development experience if you want to customize things. The [Academic theme](https://themes.gohugo.io/academic/) is the most popular Hugo theme and is much better documented/battle-worn if you are looking for something that will most definitely work and that is very customizable with plenty of documentation. That is what I built my [consulting website](https://northbeachconsulting.ca/) with.
+I spent a while choosing a theme and eventually settled on Yihui's [hugo-ivy theme](https://github.com/yihui/hugo-ivy). I wanted something minimal but with solid technical and R-friendly formatting capabilities. Note, the [Academic theme](https://themes.gohugo.io/academic/), which I used for my [consulting website](https://northbeachconsulting.ca/), is very popular and a great choice If you are looking for something that will definitely 'just work', is very customizable and is well-documented.
 
-I'll briefly go over some minor modifications I made to the hugo-ivy theme.
+## Modifying the theme
+Here are some minor modifications I made to the hugo-ivy theme.
 
 First, to make any changes to the CSS you have to find the .css files! These live in `./themes/hugo-ivy/static/css/`.
 I changed the text font to Roboto in the `fonts.css` file
