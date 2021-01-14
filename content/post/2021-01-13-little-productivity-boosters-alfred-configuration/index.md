@@ -12,7 +12,7 @@ tags:
 ---
 
 ## The problem
-If you are opening and closing a lot of RStudio projects throughout the day, it's useful to think about the most efficient way to search for and open `.Rproj` files. I want to avoid using my mouse in a Finder window and I find that the default Mac search app Spotlight doesn't do a great job of filtering through file types.
+If you are opening and closing a lot of RStudio projects throughout the day, it's useful to think about the most efficient way to search for and open `.Rproj` files. I want to avoid using my mouse in a Finder window and I find that the default Mac search app Spotlight provides too many results.
 
 ## The solution
 I came across this tip by Hadley Wickham that makes use of the [Alfred](https://www.alfredapp.com/) app[^1].
