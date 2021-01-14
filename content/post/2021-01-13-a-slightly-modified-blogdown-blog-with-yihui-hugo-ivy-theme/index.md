@@ -56,7 +56,7 @@ the colour of the title and subtitle,
 ```
 and changed the color and margin of the timestamps next to the blog titles by adding CSS via the style argument in `./themes/hugo-ivy/layouts/partials/list.html`(since the date class did not appear to exist in `style.css` file).
 
-```
+```html
 <ul>
   {{ range (where ($.Scratch.Get "pages") "Section" "!=" "") }}
   <li style="margin-bottom: 1em;">

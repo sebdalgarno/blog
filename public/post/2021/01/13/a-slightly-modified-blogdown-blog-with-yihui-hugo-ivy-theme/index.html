@@ -129,16 +129,16 @@ I changed the text font to Roboto in the <code>fonts.css</code> file</p>
   <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#6B7280</span>;
 }
 </code></pre></div><p>and changed the color and margin of the timestamps next to the blog titles by adding CSS via the style argument in <code>./themes/hugo-ivy/layouts/partials/list.html</code>(since the date class did not appear to exist in <code>style.css</code> file).</p>
-<pre><code>&lt;ul&gt;
-  {{ range (where ($.Scratch.Get &quot;pages&quot;) &quot;Section&quot; &quot;!=&quot; &quot;&quot;) }}
-  &lt;li style=&quot;margin-bottom: 1em;&quot;&gt;
-    &lt;span class=&quot;date&quot; style=&quot;color: #6B7280; margin-right: 1rem;
-&quot;&gt;{{ .Date.Format &quot;2006/01/02&quot; }}&lt;/span&gt;
-    &lt;a href=&quot;{{ .RelPermalink }}&quot;&gt;{{ .Title }}&lt;/a&gt;
-  &lt;/li&gt;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">ul</span>&gt;
+  {{ range (where ($.Scratch.Get &#34;pages&#34;) &#34;Section&#34; &#34;!=&#34; &#34;&#34;) }}
+  &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;margin-bottom: 1em;&#34;</span>&gt;
+    &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;date&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color: #6B7280; margin-right: 1rem;
+</span><span style="color:#e6db74">&#34;</span>&gt;{{ .Date.Format &#34;2006/01/02&#34; }}&lt;/<span style="color:#f92672">span</span>&gt;
+    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .RelPermalink }}&#34;</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">a</span>&gt;
+  &lt;/<span style="color:#f92672">li</span>&gt;
   {{ end }}
-&lt;/ul&gt;
-</code></pre><p>I grabbed colour hex codes from <a href="https://tailwindcss.com/docs/customizing-colors">Tailwind CSS</a> which I find has a really nice cool (i.e. blue-tinted) grey palette.</p>
+&lt;/<span style="color:#f92672">ul</span>&gt;
+</code></pre></div><p>I grabbed colour hex codes from <a href="https://tailwindcss.com/docs/customizing-colors">Tailwind CSS</a> which I find has a really nice cool (i.e. blue-tinted) grey palette.</p>
 <p>Finally, I added emojis into the title by modifying <code>./themes/hugo-ivy/layouts/partials/tagline.html</code></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">h1</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ relURL &#34;</span><span style="color:#960050;background-color:#1e0010">/&#34;</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color: #111827;&#34;</span>&gt;{{ .Site.Title | emojify }}&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">h1</span>&gt;
 </code></pre></div><p>Note the <code> | emojify</code> part. I then modified the <code>config.yaml</code> file <code>title</code> to</p>
