@@ -8,12 +8,13 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/rstudio/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Little productivity boosters - Alfred configuration</title>
+      <title>Little productivity boosters - Alfred &#43; .Rproj</title>
       <link>/post/2021/01/13/little-productivity-boosters-alfred-configuration/</link>
       <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/post/2021/01/13/little-productivity-boosters-alfred-configuration/</guid>
-      <description></description>
+      <description>The problem If you are opening and closing a lot of RStudio projects throughout the day, it&amp;rsquo;s useful to think about the most efficient way to search for and open .Rproj files. I want to avoid using my mouse in a Finder window and I find that the default Mac search app Spotlight doesn&amp;rsquo;t do a great job of filtering through file types.
+The solution I came across this tip by Hadley Wickham that makes use of the Alfred app1.</description>
     </item>
     
     <item>
