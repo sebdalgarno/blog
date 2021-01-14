@@ -1,5 +1,5 @@
 ---
-author: Seb Dalgarno
+author: Seb 
 date: "2021-01-12"
 description: A simple use case for setting up a git alias to stage, commit and push all files from RStudio terminal.
 tags:

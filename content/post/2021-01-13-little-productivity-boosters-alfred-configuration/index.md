@@ -1,6 +1,6 @@
 ---
 title: Little productivity boosters - Alfred + .Rproj
-author: seb
+author: Seb
 date: '2021-01-13'
 slug: little-productivity-boosters-alfred-configuration
 categories:
