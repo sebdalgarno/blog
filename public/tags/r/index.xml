@@ -29,16 +29,5 @@ This first post will focus on the first two points.
 The analysis pipeline: punch raw data -&amp;gt; clean data for db -&amp;gt; insert data into db (via app) -&amp;gt; receive informative error messages -&amp;gt; repeat until successful -&amp;gt; PostgreSQL functions tidy data -&amp;gt; read tidied data into R for analysis</description>
     </item>
     
-    <item>
-      <title>Little productivity boosters - git alias</title>
-      <link>/post/2021/01/12/little-productivity-boosters-git-alias/</link>
-      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2021/01/12/little-productivity-boosters-git-alias/</guid>
-      <description>The problem For years I have staged, committed and pushed changes with the RStudio Git interface.
-It works! But it can be time-consuming when you are doing it a lot. And I&amp;rsquo;ve been trying to use my mouse less. It would be better to do this in the terminal.
-The solution I found this solution on stackoverflow, which suggests staging and committing all files by running the following in the terminal:</description>
-    </item>
-    
   </channel>
 </rss>

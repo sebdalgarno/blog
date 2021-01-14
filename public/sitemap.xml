@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/categories/</loc>
+    <lastmod>2021-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/command-line/</loc>
+    <lastmod>2021-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/github/</loc>
+    <lastmod>2021-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2021-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/productivity/</loc>
+    <lastmod>2021-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2021/01/14/productivity-boosters-github-from-the-command-line/</loc>
+    <lastmod>2021-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2021-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/2021/01/13/a-slightly-modified-blogdown-blog-with-yihui-hugo-ivy-theme/</loc>
     <lastmod>2021-01-13T00:00:00+00:00</lastmod>
   </url>
@@ -33,11 +73,6 @@
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2021-01-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/css/</loc>
     <lastmod>2021-01-13T00:00:00+00:00</lastmod>
   </url>
@@ -53,16 +88,6 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2021-01-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/2021/01/13/little-productivity-boosters-alfred-configuration/</loc>
-    <lastmod>2021-01-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/mac/</loc>
     <lastmod>2021-01-13T00:00:00+00:00</lastmod>
   </url>
@@ -73,12 +98,7 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2021-01-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/productivity/</loc>
+    <loc>/post/2021/01/13/productivity-boosters-alfred-configuration/</loc>
     <lastmod>2021-01-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -89,11 +109,6 @@
   
   <url>
     <loc>/tags/rstudio/</loc>
-    <lastmod>2021-01-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2021-01-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -113,7 +128,7 @@
   </url>
   
   <url>
-    <loc>/post/2021/01/12/little-productivity-boosters-git-alias/</loc>
+    <loc>/post/2021/01/12/productivity-boosters-git-alias/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   

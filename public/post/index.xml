@@ -6,7 +6,16 @@
     <description>Recent content in Posts on :fish: Fishy Data</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Productivity boosters - GitHub from the command line</title>
+      <link>/post/2021/01/14/productivity-boosters-github-from-the-command-line/</link>
+      <pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021/01/14/productivity-boosters-github-from-the-command-line/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>A (modified) blogdown blog with hugo-ivy theme</title>
       <link>/post/2021/01/13/a-slightly-modified-blogdown-blog-with-yihui-hugo-ivy-theme/</link>
@@ -30,21 +39,21 @@ The analysis pipeline: punch raw data -&amp;gt; clean data for db -&amp;gt; inse
     </item>
     
     <item>
-      <title>Little productivity boosters - Alfred &#43; .Rproj</title>
-      <link>/post/2021/01/13/little-productivity-boosters-alfred-configuration/</link>
+      <title>Productivity boosters - Alfred &#43; .Rproj</title>
+      <link>/post/2021/01/13/productivity-boosters-alfred-configuration/</link>
       <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/post/2021/01/13/little-productivity-boosters-alfred-configuration/</guid>
+      <guid>/post/2021/01/13/productivity-boosters-alfred-configuration/</guid>
       <description>The problem If you are opening and closing a lot of RStudio projects throughout the day, it&amp;rsquo;s useful to think about the most efficient way to search for and open .Rproj files. I want to avoid using my mouse in a Finder window and I find that the default Mac search app Spotlight provides too many results.
 The solution I came across this tip by Hadley Wickham that makes use of the Alfred app1.</description>
     </item>
     
     <item>
-      <title>Little productivity boosters - git alias</title>
-      <link>/post/2021/01/12/little-productivity-boosters-git-alias/</link>
+      <title>Productivity boosters - git alias</title>
+      <link>/post/2021/01/12/productivity-boosters-git-alias/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/post/2021/01/12/little-productivity-boosters-git-alias/</guid>
+      <guid>/post/2021/01/12/productivity-boosters-git-alias/</guid>
       <description>The problem For years I have staged, committed and pushed changes with the RStudio Git interface.
 It works! But it can be time-consuming when you are doing it a lot. And I&amp;rsquo;ve been trying to use my mouse less. It would be better to do this in the terminal.
 The solution I found this solution on stackoverflow, which suggests staging and committing all files by running the following in the terminal:</description>

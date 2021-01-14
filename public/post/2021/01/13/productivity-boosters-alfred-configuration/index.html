@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Productivity boosters - Alfred &#43; .Rproj - :fish: Fishy Data</title>
+    <meta property="og:title" content="Productivity boosters - Alfred &#43; .Rproj - :fish: Fishy Data">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="If you are opening and closing a lot of RStudio projects throughout the day, it&amp;rsquo;s useful to think about the most efficient way to search for and open .Rproj files. I want to avoid using my mouse &amp;hellip;">
+      <meta property="og:description" content="If you are opening and closing a lot of RStudio projects throughout the day, it&amp;rsquo;s useful to think about the most efficient way to search for and open .Rproj files. I want to avoid using my mouse &amp;hellip;">
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+
+  </head>
+
+  
+  <body class="post">
+    <header class="masthead">
+      <span class="name" style="margin: 0px !important;
+  display: inline !important;
+  height: auto;
+  font-size: 30px;
+  vertical-align: middle;
+  line-height: 2;">
+                        
+
+                    </span>
+      
+<h1><a href="/" style="color: #111827;">🐟 Fishy Data</a></h1>
+
+
+ <p class="tagline">A blog about R, fish movement and other computery things.</p>
+
+      <nav class="menu">
+  <input id="menu-check" type="checkbox" hidden/>
+  <label id="menu-label" for="menu-check" class="unselectable" hidden>
+    <span class="icon close-icon">✕</span>
+    <span class="icon open-icon">☰</span>
+    <span class="text">Menu</span>
+  </label>
+  <ul>
+  
+  
+  <li><a href="/">Home</a></li>
+  
+  <li><a href="/about/">About</a></li>
+  
+  <li><a href="/categories/">Categories</a></li>
+  
+  <li><a href="/tags/">Tags</a></li>
+  
+  <li><a href="/index.xml">Subscribe</a></li>
+  
+  
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>Productivity boosters - Alfred &#43; .Rproj</h1>
+
+<h3>Seb
+  /  2021-01-13</h3>
+<hr>
+
+
+      </header>
+
+
+
+<h2 id="the-problem">The problem</h2>
+<p>If you are opening and closing a lot of RStudio projects throughout the day, it&rsquo;s useful to think about the most efficient way to search for and open <code>.Rproj</code> files. I want to avoid using my mouse in a Finder window and I find that the default Mac search app Spotlight provides too many results.</p>
+<h2 id="the-solution">The solution</h2>
+<p>I came across this tip by Hadley Wickham that makes use of the <a href="https://www.alfredapp.com/">Alfred</a> app<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/boKFxBniUH0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Install Alfred from the <a href="https://www.alfredapp.com/">website</a> or with homebrew on the command line:</p>
+<pre><code>brew install --cask alfred
+</code></pre><p>Open Alfred and get into <code>Preferences -&gt; Features -&gt; Default Results</code> panel.
+<img src="/img/alfred1.png" alt="Alfred1"></p>
+<p>Click on <code>Advanced...</code> and add the following user-defined file type (by clicking <code>+</code>)</p>
+<pre><code>dyn.ah62d4rv4ge81e6dwr7za
+</code></pre><p><img src="/img/alfred2.png" alt="Alfred1"></p>
+<p>I like to open Alfred with the keyboard shortcut <kbd>Cmd</kbd>-<kbd>space</kbd> instead of Spotlight. I followed the instructions <a href="https://www.alfredapp.com/help/troubleshooting/cmd-space/">here</a> to do this.</p>
+<p>Done! Now open Alfred with <kbd>Cmd</kbd>-<kbd>space</kbd> and start typing in the name of a <code>.Rproj</code> file. Note you can add other file types for Alfred to look for (e.g. Scrivener projects). A final tip is that if you press <kbd>space</kbd> before typing the file name, Alfred will search all files.</p>
+<p>If you are looking for more Mac productivity tips, check out this awesome Twitter thread
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;ve got a new work laptop! I&#39;m going to try to track my setup process and the software and tools I install in this thread <a href="https://t.co/9X2qvHB3no">pic.twitter.com/9X2qvHB3no</a></p>&mdash; Garrick Aden-Buie (@grrrck) <a href="https://twitter.com/grrrck/status/1333804309272621060?ref_src=twsrc%5Etfw">December 1, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Sorry Windows users, Alfred only available on Mac. But there are other apps for Windows that do similar things. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/post/2021/01/12/productivity-boosters-git-alias/">Productivity boosters - git alias</a></span>
+  <span class="nav-next"><a href="/post/2021/01/13/designing-a-postrgresql-db-for-acoustic-telemetry/">Designing a PostrgreSQL db for acoustic telemetry</a> &rarr;</span>
+</nav>
+
+
+
+
+
+<script src="//yihui.org/js/math-code.js"></script>
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.org/js/center-img.js"></script>
+
+  
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/tex.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/stan.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/html.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+  
+  <hr>
+  <div class="copyright">© <a href="https://sebdalgarno.netlify.app">Seb Dalgarno</a> 2021 | <a href="https://github.com/sebdalgarno">Github</a> | <a href="https://twitter.com/sebdalgarno">Twitter</a></div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

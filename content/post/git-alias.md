@@ -5,12 +5,12 @@ description: A simple use case for setting up a git alias to stage, commit and p
 tags:
 - git
 - rstudio
-- r
+- command line
 categories: 
 - productivity
 series: 
-- Little productivity boosters
-title: Little productivity boosters - git alias
+- productivity boosters
+title: Productivity boosters - git alias
 ---
 
 ## The problem

@@ -1,10 +1,12 @@
 ---
-title: Little productivity boosters - Alfred + .Rproj
+title: Productivity boosters - Alfred + .Rproj
 author: Seb
 date: '2021-01-13'
-slug: little-productivity-boosters-alfred-configuration
+slug: productivity-boosters-alfred-configuration
 categories:
   - productivity
+series:
+  - productivity boosters
 tags:
   - rstudio
   - alfred
