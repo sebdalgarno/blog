@@ -4,8 +4,10 @@ date: "2021-01-12"
 description: A simple use case for setting up a git alias to stage, commit and push all files from RStudio terminal.
 tags:
 - git
-- RStudio
+- rstudio
 - r
+categories: 
+- productivity
 series: 
 - Little productivity boosters
 title: Little productivity boosters - git alias

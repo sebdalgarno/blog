@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>RStudio on :fish: Fishy Data :fishing_pole_and_fish:</title>
+    <title>rstudio on :fish: Fishy Data :fishing_pole_and_fish:</title>
     <link>/tags/rstudio/</link>
-    <description>Recent content in RStudio on :fish: Fishy Data :fishing_pole_and_fish:</description>
+    <description>Recent content in rstudio on :fish: Fishy Data :fishing_pole_and_fish:</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/rstudio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/rstudio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Little productivity boosters - Alfred configuration</title>
+      <link>/post/2021/01/13/little-productivity-boosters-alfred-configuration/</link>
+      <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021/01/13/little-productivity-boosters-alfred-configuration/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Little productivity boosters - git alias</title>
       <link>/post/2021/01/12/little-productivity-boosters-git-alias/</link>
