@@ -24,8 +24,8 @@ The solution I came across this tip by Hadley Wickham that makes use of the Alfr
       
       <guid>/post/2021/01/12/productivity-boosters-git-alias/</guid>
       <description>The problem For years I have staged, committed and pushed changes with the RStudio Git interface.
-It works! But it can be time-consuming when you are doing it a lot. And I&amp;rsquo;ve been trying to use my mouse less. It would be better to do this in the terminal.
-The solution I found this solution on stackoverflow, which suggests staging and committing all files by running the following in the terminal:</description>
+It works! But it can be time-consuming when you are doing it a lot. And I&amp;rsquo;ve been trying to use my mouse less. It would be better to do this in the comand line.
+The solution I found this solution on stackoverflow, which suggests staging and committing all files by running the following in the command line:</description>
     </item>
     
   </channel>

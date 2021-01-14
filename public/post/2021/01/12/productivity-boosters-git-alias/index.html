@@ -106,13 +106,13 @@
 margin-left: auto;
 margin-right: auto;
 width: 80%;"/></p>
-<p>It works! But it can be time-consuming when you are doing it a lot. And I&rsquo;ve been trying to use my mouse less. It would be better to do this in the terminal.</p>
+<p>It works! But it can be time-consuming when you are doing it a lot. And I&rsquo;ve been trying to use my mouse less. It would be better to do this in the comand line.</p>
 <h2 id="the-solution">The solution</h2>
-<p>I found <a href="https://stackoverflow.com/questions/2419249/how-can-i-stage-and-commit-all-files-including-newly-added-files-using-a-singl">this solution</a> on stackoverflow, which suggests staging and committing all files by running the following in the terminal:</p>
+<p>I found <a href="https://stackoverflow.com/questions/2419249/how-can-i-stage-and-commit-all-files-including-newly-added-files-using-a-singl">this solution</a> on stackoverflow, which suggests staging and committing all files by running the following in the command line:</p>
 <pre><code>git add -A &amp;&amp; git commit -m &quot;rebuild site&quot;
 </code></pre><p>We can push like this:</p>
 <pre><code>git push
-</code></pre><p>However, the real productivity gains are made by using <a href="https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases">git aliases</a>, which save us having to type (and remember) full git commands. Let&rsquo;s start with a simple example. To set up the alias <code>git p</code> for <code>git push</code>, we type in the terminal:</p>
+</code></pre><p>However, the real productivity gains are made by using <a href="https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases">git aliases</a>, which save us having to type (and remember) full git commands. Let&rsquo;s start with a simple example. To set up the alias <code>git p</code> for <code>git push</code>, we type in the comand line:</p>
 <pre><code>git config --global alias.p &quot;push&quot;
 </code></pre><p>To set up the alias <code>git c</code> for <code>git commit</code> we do:</p>
 <pre><code>git config --global alias.c &quot;commit&quot;
@@ -121,7 +121,7 @@ width: 80%;"/></p>
 </code></pre><p>From now on, we can stage, commit and push all changes with two simple commands:</p>
 <pre><code>git coa 'rebuild site'
 </code></pre><pre><code>git p
-</code></pre><p>Now to completely remove the need to use the mouse, we can set up a customized keyboard shortcut<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> <kbd>Cmd</kbd>-<kbd>3</kbd> to move the cursor to the RStudio terminal.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> The advantage of using the RStudio terminal and not the Terminal app (or iterm2)<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> is that it is automatically drilled down into the directory of your project.</p>
+</code></pre><p>Now to completely remove the need to use the mouse, we can set up a customized keyboard shortcut<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> <kbd>Cmd</kbd>-<kbd>3</kbd> to move the cursor to the RStudio Terminal.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> The advantage of using the RStudio terminal and not the MacOS Terminal app (or iterm2)<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> is that it is automatically drilled down into the directory of your project.</p>
 <p>🎉🎉🎉</p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
@@ -133,7 +133,7 @@ width: 80%;"/></p>
 <p>I use <kbd>Cmd</kbd>-<kbd>1</kbd> to move cursor to script and <kbd>Cmd</kbd>-<kbd>2</kbd> to move cursor to console. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p>Note that these tips are for Mac users. I&rsquo;m not sure how to do the above in Windows. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>These tips are for Mac users. I&rsquo;m not sure how to do the above in Windows. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
