@@ -8,6 +8,16 @@
   </url>
   
   <url>
+    <loc>/tags/acoustic-telemetry/</loc>
+    <lastmod>2021-01-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/acoustic-telemetry/</loc>
+    <lastmod>2021-01-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/alfred/</loc>
     <lastmod>2021-01-13T00:00:00+00:00</lastmod>
   </url>
@@ -33,6 +43,16 @@
   </url>
   
   <url>
+    <loc>/categories/database/</loc>
+    <lastmod>2021-01-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2021/01/13/designing-a-postrgresql-db-for-acoustic-telemetry/</loc>
+    <lastmod>2021-01-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/</loc>
     <lastmod>2021-01-13T00:00:00+00:00</lastmod>
   </url>
@@ -44,6 +64,11 @@
   
   <url>
     <loc>/tags/mac/</loc>
+    <lastmod>2021-01-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/postgresql/</loc>
     <lastmod>2021-01-13T00:00:00+00:00</lastmod>
   </url>
   

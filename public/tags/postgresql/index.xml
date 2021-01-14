@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>postgresql on :fish: Fishy Data</title>
+    <link>/tags/postgresql/</link>
+    <description>Recent content in postgresql on :fish: Fishy Data</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/postgresql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Designing a PostrgreSQL db for acoustic telemetry</title>
+      <link>/post/2021/01/13/designing-a-postrgresql-db-for-acoustic-telemetry/</link>
+      <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021/01/13/designing-a-postrgresql-db-for-acoustic-telemetry/</guid>
+      <description>This is a series of posts that will aim to:
+1. outline a philosophy and structure for the ideal acoustic telemetry database
+1. justify this philosophy and structure within the context of a broader analysis pipeline (i.e. inputs/outputs) 1. demonstrate specific SQL and R code to achieve this
+This first post will focus on the first two points.
+The analysis pipeline: punch raw data -&amp;gt; clean data for db -&amp;gt; insert data into db (via app) -&amp;gt; receive informative error messages -&amp;gt; repeat until successful -&amp;gt; PostgreSQL functions tidy data -&amp;gt; read tidied data into R for analysis</description>
+    </item>
+    
+  </channel>
+</rss>

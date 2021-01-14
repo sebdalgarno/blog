@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on :fish: Fishy Data :fishing_pole_and_fish:</title>
+    <title>Home on :fish: Fishy Data</title>
     <link>/</link>
-    <description>Recent content in Home on :fish: Fishy Data :fishing_pole_and_fish:</description>
+    <description>Recent content in Home on :fish: Fishy Data</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
@@ -14,6 +14,19 @@
       
       <guid>/post/2021/01/13/a-slightly-modified-blogdown-blog-with-yihui-hugo-ivy-theme/</guid>
       <description>Selecting a theme I made this blog with blogdown. blogdown is an R package by the awesome Yihui Xie that allows you to combine Hugo and Rmarkdown. For example, if you check out Joe Thorley&amp;rsquo;s sweet blog and this post, you can see that it is great for demonstrating R code and generating output from that code to explain analyses and statistical concepts. Even if you aren&amp;rsquo;t using R though, it is just really sweet to make posts in plain markdown.</description>
+    </item>
+    
+    <item>
+      <title>Designing a PostrgreSQL db for acoustic telemetry</title>
+      <link>/post/2021/01/13/designing-a-postrgresql-db-for-acoustic-telemetry/</link>
+      <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021/01/13/designing-a-postrgresql-db-for-acoustic-telemetry/</guid>
+      <description>This is a series of posts that will aim to:
+1. outline a philosophy and structure for the ideal acoustic telemetry database
+1. justify this philosophy and structure within the context of a broader analysis pipeline (i.e. inputs/outputs) 1. demonstrate specific SQL and R code to achieve this
+This first post will focus on the first two points.
+The analysis pipeline: punch raw data -&amp;gt; clean data for db -&amp;gt; insert data into db (via app) -&amp;gt; receive informative error messages -&amp;gt; repeat until successful -&amp;gt; PostgreSQL functions tidy data -&amp;gt; read tidied data into R for analysis</description>
     </item>
     
     <item>

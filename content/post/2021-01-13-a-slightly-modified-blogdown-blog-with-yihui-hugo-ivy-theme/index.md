@@ -75,7 +75,7 @@ Finally, I added emojis into the title by modifying `./themes/hugo-ivy/layouts/p
 ```
 Note the ` | emojify` part. I then modified the `config.yaml` file `title` to
 ```yaml
-title: ":fish: Fishy Data :fishing_pole_and_fish:"
+title: ":fish: Fishy Data"
 ```
 where the emojis are defined like this: \:fish\:
 

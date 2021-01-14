@@ -1,6 +1,6 @@
 baseurl: /
 languageCode: en-us
-title: ":fish: Fishy Data :fishing_pole_and_fish:"
+title: ":fish: Fishy Data"
 theme: "hugo-ivy"
 enableEmoji: true
 googleAnalytics: ""
