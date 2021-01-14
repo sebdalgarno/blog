@@ -13,7 +13,7 @@
       <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/post/2021/01/13/a-slightly-modified-blogdown-blog-with-yihui-hugo-ivy-theme/</guid>
-      <description>Selecting a theme I made this blog with blogdown. blogdown is an R package by the awesome Yihui Xie that allows you to combine Hugo and Rmarkdown. For example, if you check out Joe Thorley&amp;rsquo;s sweet blog and this post, you can see that it is great for demonstrating R code and generating output from that code to explain analyses and statistical concepts. Even if you aren&amp;rsquo;t using R though, it is just really sweet to make posts in plain markdown.</description>
+      <description>Selecting a theme I made this blog with blogdown. blogdown is an R package by the awesome Yihui Xie that allows you to combine Hugo and Rmarkdown. For example, if you check out Joe Thorley&amp;rsquo;s sweet blog and this post, you&amp;rsquo;ll see that it is great for demonstrating R code and generating output from that code to explain analyses and statistical concepts. Even if you aren&amp;rsquo;t using R though, it is just really sweet to make posts in plain markdown.</description>
     </item>
     
     <item>
