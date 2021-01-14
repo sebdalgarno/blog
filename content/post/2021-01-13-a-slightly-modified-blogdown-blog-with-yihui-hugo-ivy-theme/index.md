@@ -23,13 +23,13 @@ I spent a while choosing a theme and eventually settled on Yihui's [hugo-ivy the
 Here are some minor modifications I made to the hugo-ivy theme.
 
 First, to make any changes to the CSS you have to find the .css files! These live in `./themes/hugo-ivy/static/css/`.
-I changed the text font to Roboto in the `fonts.css` file
+I changed the text font to Roboto in the `fonts.css` file,
 ```css
 body {
   font-family: Roboto, 'Lucida Sans', Calibri, Candara, Arial, 'source-han-serif-sc', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif TC', 'Source Han Serif TW', 'Source Han Serif', 'Songti SC', 'Microsoft YaHei', sans-serif;
 }
 ```
-the CSS of the links (line and text color, hover background),
+the link text/line color and hover effect in `style.css` file,
 ```css
 a {
   color: #111827;
@@ -83,4 +83,4 @@ I probably forgot one or two things, but that's basically it! Here is how the [d
 
 ![hugo-ivy](/img/hugo-ivy.png)
 
-Better I think? Who knows, maybe I jsut wasted a couple hours...but at least I learned a bit more about how Hugo themes work.
+Better I think? Who knows, maybe I just wasted a couple hours...but at least I learned a bit more about how Hugo themes work.
