@@ -43,7 +43,7 @@ a:hover {
   border-radius: 0.3rem;
 }
 ```
-and the colour of the title and subtitle.
+the colour of the title and subtitle,
 ```css
 .masthead .tagline {
   color: #4B5563;
@@ -54,7 +54,19 @@ and the colour of the title and subtitle.
   color: #6B7280;
 }
 ```
+and changed the color and margin of the timestamps next to the blog titles by adding CSS via the style argument in `./themes/hugo-ivy/layouts/partials/list.html`(since the date class did not appear to exist in `style.css` file).
 
+```
+<ul>
+  {{ range (where ($.Scratch.Get "pages") "Section" "!=" "") }}
+  <li style="margin-bottom: 1em;">
+    <span class="date" style="color: #6B7280; margin-right: 1rem;
+">{{ .Date.Format "2006/01/02" }}</span>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </li>
+  {{ end }}
+</ul>
+```
 I grabbed colour hex codes from [Tailwind CSS](https://tailwindcss.com/docs/customizing-colors) which I find has a really nice cool (i.e. blue-tinted) grey palette.
 
 Finally, I added emojis into the title by modifying `./themes/hugo-ivy/layouts/partials/tagline.html`

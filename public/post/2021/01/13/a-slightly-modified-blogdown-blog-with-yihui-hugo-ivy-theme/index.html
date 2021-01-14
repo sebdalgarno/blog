@@ -119,7 +119,7 @@ I changed the text font to Roboto in the <code>fonts.css</code> file</p>
   <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#F3F4F6</span>;
   <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">0.3</span><span style="color:#66d9ef">rem</span>;
 }
-</code></pre></div><p>and the colour of the title and subtitle.</p>
+</code></pre></div><p>the colour of the title and subtitle,</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">masthead</span> .<span style="color:#a6e22e">tagline</span> {
   <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#4B5563</span>;
   <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">right</span>;
@@ -128,7 +128,17 @@ I changed the text font to Roboto in the <code>fonts.css</code> file</p>
   <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">.9</span><span style="color:#66d9ef">em</span>;
   <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#6B7280</span>;
 }
-</code></pre></div><p>I grabbed colour hex codes from <a href="https://tailwindcss.com/docs/customizing-colors">Tailwind CSS</a> which I find has a really nice cool (i.e. blue-tinted) grey palette.</p>
+</code></pre></div><p>and changed the color and margin of the timestamps next to the blog titles by adding CSS via the style argument in <code>./themes/hugo-ivy/layouts/partials/list.html</code>(since the date class did not appear to exist in <code>style.css</code> file).</p>
+<pre><code>&lt;ul&gt;
+  {{ range (where ($.Scratch.Get &quot;pages&quot;) &quot;Section&quot; &quot;!=&quot; &quot;&quot;) }}
+  &lt;li style=&quot;margin-bottom: 1em;&quot;&gt;
+    &lt;span class=&quot;date&quot; style=&quot;color: #6B7280; margin-right: 1rem;
+&quot;&gt;{{ .Date.Format &quot;2006/01/02&quot; }}&lt;/span&gt;
+    &lt;a href=&quot;{{ .RelPermalink }}&quot;&gt;{{ .Title }}&lt;/a&gt;
+  &lt;/li&gt;
+  {{ end }}
+&lt;/ul&gt;
+</code></pre><p>I grabbed colour hex codes from <a href="https://tailwindcss.com/docs/customizing-colors">Tailwind CSS</a> which I find has a really nice cool (i.e. blue-tinted) grey palette.</p>
 <p>Finally, I added emojis into the title by modifying <code>./themes/hugo-ivy/layouts/partials/tagline.html</code></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">h1</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ relURL &#34;</span><span style="color:#960050;background-color:#1e0010">/&#34;</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color: #111827;&#34;</span>&gt;{{ .Site.Title | emojify }}&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">h1</span>&gt;
 </code></pre></div><p>Note the <code> | emojify</code> part. I then modified the <code>config.yaml</code> file <code>title</code> to</p>
