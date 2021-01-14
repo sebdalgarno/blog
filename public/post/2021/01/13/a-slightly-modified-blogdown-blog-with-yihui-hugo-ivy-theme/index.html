@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>A (slightly modified) blogdown blog with hugo-ivy theme - :fish: Fishy Data :fishing_pole_and_fish:</title>
+    <meta property="og:title" content="A (slightly modified) blogdown blog with hugo-ivy theme - :fish: Fishy Data :fishing_pole_and_fish:">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="I made this blog with blogdown. blogdown is an R package by the awesome Yihui Xie that allows you to combine Hugo and Rmarkdown. For example, if you check out Joe Thorley&amp;rsquo;s sweet blog and this &amp;hellip;">
+      <meta property="og:description" content="I made this blog with blogdown. blogdown is an R package by the awesome Yihui Xie that allows you to combine Hugo and Rmarkdown. For example, if you check out Joe Thorley&amp;rsquo;s sweet blog and this &amp;hellip;">
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+
+  </head>
+
+  
+  <body class="post">
+    <header class="masthead">
+      <span class="name" style="margin: 0px !important;
+  display: inline !important;
+  height: auto;
+  font-size: 30px;
+  vertical-align: middle;
+  line-height: 2;">
+                        
+
+                    </span>
+      
+<h1><a href="/" style="color: #111827;">🐟 Fishy Data 🎣</a></h1>
+
+
+ <p class="tagline">A blog about R, fish movement and other computery things.</p>
+
+      <nav class="menu">
+  <input id="menu-check" type="checkbox" hidden/>
+  <label id="menu-label" for="menu-check" class="unselectable" hidden>
+    <span class="icon close-icon">✕</span>
+    <span class="icon open-icon">☰</span>
+    <span class="text">Menu</span>
+  </label>
+  <ul>
+  
+  
+  <li><a href="/">Home</a></li>
+  
+  <li><a href="/about/">About</a></li>
+  
+  <li><a href="/categories/">Categories</a></li>
+  
+  <li><a href="/tags/">Tags</a></li>
+  
+  <li><a href="/index.xml">Subscribe</a></li>
+  
+  
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>A (slightly modified) blogdown blog with hugo-ivy theme</h1>
+
+<h3>Seb
+  /  2021-01-13</h3>
+<hr>
+
+
+      </header>
+
+
+
+<p>I made this blog with <a href="https://bookdown.org/yihui/blogdown/">blogdown</a>. blogdown is an R package by the awesome <a href="https://yihui.org/en/about/">Yihui Xie</a> that allows you to combine <a href="https://gohugo.io/">Hugo</a> and Rmarkdown. For example, if you check out Joe Thorley&rsquo;s <a href="https://www.joethorley.io/">sweet blog</a> and <a href="https://www.joethorley.io/post/2019/exponential-growth/">this post</a> for example, you can see that it is great for demonstrate R code and generate output from that code to explain analyses and statistical concepts. Even if you aren&rsquo;t using R though, it is just really sweet to make posts in plain markdown.</p>
+<p>I spent a while choosing a theme and eventually settled on yihui&rsquo;s <a href="https://github.com/yihui/hugo-ivy">hugo-ivy theme</a>. Note there is no documentation for this theme so it is useful to have a bit of web development experience if you want to customize things. The <a href="https://themes.gohugo.io/academic/">Academic theme</a> is the most popular Hugo theme and is much better documented/battle-worn if you are looking for something that will most definitely work and that is very customizable with plenty of documentation. That is what I built my <a href="https://northbeachconsulting.ca/">consulting website</a> with.</p>
+<p>I&rsquo;ll briefly go over some minor modifications I made to the hugo-ivy theme.</p>
+<p>First, to make any changes to the CSS you have to find the .css files! These live in <code>./themes/hugo-ivy/static/css/</code>.
+I changed the text font to Roboto in the <code>fonts.css</code> file</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">body</span> {
+  <span style="color:#66d9ef">font-family</span>: Roboto, <span style="color:#e6db74">&#39;Lucida Sans&#39;</span>, Calibri, Candara, Arial, <span style="color:#e6db74">&#39;source-han-serif-sc&#39;</span>, <span style="color:#e6db74">&#39;Source Han Serif SC&#39;</span>, <span style="color:#e6db74">&#39;Source Han Serif CN&#39;</span>, <span style="color:#e6db74">&#39;Source Han Serif TC&#39;</span>, <span style="color:#e6db74">&#39;Source Han Serif TW&#39;</span>, <span style="color:#e6db74">&#39;Source Han Serif&#39;</span>, <span style="color:#e6db74">&#39;Songti SC&#39;</span>, <span style="color:#e6db74">&#39;Microsoft YaHei&#39;</span>, <span style="color:#66d9ef">sans-serif</span>;
+}
+</code></pre></div><p>the CSS of the links (line and text color, hover background),</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">a</span> {
+  <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#111827</span>;
+  <span style="color:#66d9ef">text-decoration</span>: <span style="color:#66d9ef">none</span>;
+  <span style="color:#66d9ef">padding-bottom</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">border-bottom</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#9CA3AF</span>;
+}
+
+<span style="color:#f92672">a</span>:<span style="color:#a6e22e">hover</span> {
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#F3F4F6</span>;
+  <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">0.3</span><span style="color:#66d9ef">rem</span>;
+}
+</code></pre></div><p>and the colour of the title and subtitle.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">masthead</span> .<span style="color:#a6e22e">tagline</span> {
+  <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#4B5563</span>;
+  <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">right</span>;
+}
+.<span style="color:#a6e22e">subtitle</span> {
+  <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">.9</span><span style="color:#66d9ef">em</span>;
+  <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#6B7280</span>;
+}
+</code></pre></div><p>I grabbed colour hex codes from <a href="https://tailwindcss.com/docs/customizing-colors">Tailwind CSS</a> which I find has a really nice cool (i.e. blue-tinted) grey palette.</p>
+<p>Finally, I added emojis into the title by modifying <code>./themes/hugo-ivy/layouts/partials/tagline.html</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">h1</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ relURL &#34;</span><span style="color:#960050;background-color:#1e0010">/&#34;</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color: #111827;&#34;</span>&gt;{{ .Site.Title | emojify }}&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">h1</span>&gt;
+</code></pre></div><p>Note the <code> | emojify</code> part. I then modified the <code>config.yaml</code> file <code>title</code> to</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;🐟 Fishy Data 🎣&#34;</span>
+</code></pre></div><p>where the emojis are defined like this: :fish:</p>
+<p>I probably forgot one or two things, but that&rsquo;s basically it! Here is how the <a href="https://ivy.yihui.org/">default theme</a> looks, by the way:</p>
+<p><img src="/img/hugo-ivy.png" alt="hugo-ivy"></p>
+<p>Better I think? Who knows, maybe I jsut wasted a couple hours&hellip;but at least I learned a bit more about how Hugo themes work.</p>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/post/2021/01/13/little-productivity-boosters-alfred-configuration/">Little productivity boosters - Alfred &#43; .Rproj</a></span>
+  <span class="nav-next"></span>
+</nav>
+
+
+
+
+
+<script src="//yihui.org/js/math-code.js"></script>
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.org/js/center-img.js"></script>
+
+  
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/tex.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/stan.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/html.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+  
+  <hr>
+  <div class="copyright">© <a href="https://sebdalgarno.netlify.app">Seb Dalgarno</a> 2021 | <a href="https://github.com/sebdalgarno">Github</a> | <a href="https://twitter.com/sebdalgarno">Twitter</a></div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+
