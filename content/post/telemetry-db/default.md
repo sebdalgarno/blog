@@ -12,16 +12,23 @@ tags:
 - postgresql
 - r
 - acoustic telemetry
-title: Database design for acoustic telemetry
+title: Designing a database for acoustic telemetry studies
 weight: 10
 ---
-
+# Overview
 This is a series of posts that will aim to:  
 1. outline a philosophy and structure for the ideal acoustic telemetry database   
-1. justify this philosophy and structure within the context of a broader analysis pipeline (i.e. inputs/outputs)
-1. demonstrate specific SQL and R code to achieve this  
+1. justify this philosophy and structure within the context of a broader analysis pipeline 
+1. demonstrate the SQL and R code to achieve this  
+1. outline design of an R package to facilitate building the database
 
-This first post will focus on the first two points.
+# A philosophy 
+
+# A structure
+
+# The analysis pipeline
+
+These will all be explained in further detail. This first post will focus on the first two points.
 
 The analysis pipeline:
 punch raw data -> clean data for db -> insert data into db (via app) -> receive informative error messages -> repeat until successful -> PostgreSQL functions tidy data -> read tidied data into R for analysis
