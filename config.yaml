@@ -1,4 +1,4 @@
-baseURL: http://localhost:1313/
+baseURL: https://fishydata.netlify.app
 languageCode: en
 defaultContentLanguage: en
 title: Fishy Data - A blog by Seb Dalgarno
