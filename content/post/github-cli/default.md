@@ -88,6 +88,8 @@ git checkout -b fix_that_bug
 # Switched to a new branch "fix_that_bug"
 ```
 
+add this thing
+
 There's more to be discovered! See the [full list of commands and examples](https://cli.github.com/manual/examples.html) and some resources for setting up [scripts and aliases](https://cli.github.com/manual/#extending-the-cli).
 
 Oh ya one more thing
