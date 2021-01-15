@@ -1,7 +1,6 @@
 <div class="logo-wrapper">
         
   <a href="{{ "/" | relLangURL }}" class="logo">
-    <img style="position: absolute; top:62px; right: 35px" src="/img/sturgeon.jpg" alt="sturgeon" width="130px" />
     {{- if .Site.Params.logoTitle -}}
       {{ .Site.Params.logoTitle | emojify }}
     {{- else -}}

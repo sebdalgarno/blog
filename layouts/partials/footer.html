@@ -10,16 +10,14 @@
   {{- else -}}
     <a href="{{ .Site.RSSLink }}" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
   {{- end }}
+  
 </div>
 
 <div class="copyright">
   <span class="power-by">
-    {{ (printf (T "powered") `<a class="hexo-link" href="https://gohugo.io">Hugo</a>`) | safeHTML }}
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    {{ T "theme" }} - 
-    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  <a href="{{ "/" | relLangURL }}" class="logo">
+    <img style="" src="/img/sturgeon.jpg" alt="sturgeon" width="130px" />
+  </a>
   </span>
 
   {{ if .Site.Params.busuanzi.enable -}}
