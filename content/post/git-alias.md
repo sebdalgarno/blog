@@ -3,9 +3,9 @@ autoCollapseToc: true
 categories: 
 - productivity
 contentCopyright: MIT
-date: "2018-07-10T00:00:00+08:00"
+date: "2021-01-11T00:00:00+08:00"
 draft: false
-lastmod: "2018-07-10T00:00:00+08:00"
+lastmod: "2021-01-11T00:00:00+08:00"
 mathjax: true
 tags:
 - git
