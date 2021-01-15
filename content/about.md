@@ -16,6 +16,8 @@ I'm a PhD student at the UNBC [Freshwater Fish Ecology lab](https://www.ffishlab
 
 Check out my [academic](htpps://www.sebdalgarno.netlify.app) and [consulting](https://www.northbeachconsulting.ca/) websites for more info. Also check out some recordings from my band [Rusty Mould and the Sugar Agates](https://rustymouldandthesugaragates.bandcamp.com/)!
 
-Thanks for stopping by. And before you go, check out how cool this sturgeon looks
+<img src="/img/sturgeon_sm.jpg" alt="sturgeon"
+	title="sturgeon" width="600px" />
 
-![sturgeon](/img/sturgeon.jpg)
+
+

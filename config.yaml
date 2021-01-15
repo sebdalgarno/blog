@@ -129,7 +129,7 @@ params:
     enable: no
     wechat: /path/to/your/wechat-qr-code.png
   sequenceDiagrams:
-    enable: no
+    enable: yes
     options: ''
   showArchiveCount: no
   since: '2021'
