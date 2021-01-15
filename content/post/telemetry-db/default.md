@@ -1,7 +1,7 @@
 ---
 autoCollapseToc: true
 categories: 
-- database
+- database design
 - acoustic telemetry
 contentCopyright: MIT
 date: "2021-01-15T00:00:00+08:00"
@@ -10,8 +10,10 @@ lastmod: "2021-01-15T00:00:00+08:00"
 mathjax: true
 tags:
 - postgresql
-- r
+- rstats
+- sql
 - acoustic telemetry
+- database
 title: Designing a database for acoustic telemetry studies
 weight: 10
 ---
@@ -22,9 +24,9 @@ This is a series of posts that will aim to:
 1. demonstrate the SQL and R code to achieve this  
 1. outline design of an R package to facilitate building the database
 
-# A philosophy 
+# Philosophy 
 
-# A structure
+# Structure
 
 # The analysis pipeline
 

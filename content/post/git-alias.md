@@ -25,7 +25,7 @@ For years I have staged, committed and pushed changes with the RStudio Git inter
   margin-right: auto;
   width: 80%;"/>
   
-It works! But it can be time-consuming when you are doing it a lot. And I've been trying to use my mouse less. It would be better to do this in the comand line.
+It works! But I've realized that it's much more efficient (and not hard!) to do from the command line. Check out [this sweet resource by Jenny Bryan](https://happygitwithr.com/) for more info on git with r.
 
 # Git from the command line
 I found [this solution](https://stackoverflow.com/questions/2419249/how-can-i-stage-and-commit-all-files-including-newly-added-files-using-a-singl) on stackoverflow, which suggests staging and committing all files by running the following in the command line:
