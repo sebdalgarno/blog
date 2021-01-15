@@ -1,44 +1,35 @@
+title: Education
 baseurl: /
+theme: hugo-graphite
+googleAnalytics: ''
+relativeurls: no
 languageCode: en-us
-title: ":fish: Fishy Data"
-theme: "hugo-ivy"
-enableEmoji: true
-googleAnalytics: ""
-disqusShortname: ""
-ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
-preserveTaxonomyNames: true
-footnotereturnlinkcontents: ↩
-
+description: An opinionated collection of R packages designed for data science.
+disqusShortname: ''
+ignoreFiles:
+  - \.Rmd$
+  - _files$
+  - _cache$
+preserveTaxonomyNames: yes
 permalinks:
-  note: /note/:year/:month/:day/:slug/
-  post: /post/:year/:month/:day/:slug/
-
-menu:
-  main:
-    - name: "Home"
-      url: "/"
-      weight: 1
-    - name: "About"
-      url: "/about/"
-      weight: 2
-    - name: "Categories"
-      url: "/categories/"
-      weight: 3
-    - name: "Tags"
-      url: "/tags/"
-      weight: 4
-    - name: "Subscribe"
-      url: "/index.xml"
-
-params:
-  description: "A blog about R, fish movement and other computery things."
-  footer: "&copy; [Seb Dalgarno](https://sebdalgarno.netlify.app) 2021 | [Github](https://github.com/sebdalgarno) | [Twitter](https://twitter.com/sebdalgarno)"
-  highlightjsCDN: "//cdn.bootcss.com"
-  highlightjsLang: ["r", "yaml", "tex", "stan", "html"]
-  highlightjsTheme: "github"
-  highlightjsVersion: "9.12.0"
-
+  blog: blog/:year/:month/:slug/
+taxonomies:
+  author: author
+  category: categories
+  tag: tags
+blackfriday:
+  angledQuotes: no
+  extensions: backslashLineBreak
+  hrefTargetBlank: yes
+  latexDashes: yes
 markup:
+  defaultMarkdownHandler: goldmark
   goldmark:
     renderer:
-      unsafe: true
+      unsafe: yes
+  highlight:
+    style: pygments
+  tableOfContents:
+    endLevel: 2
+    ordered: no
+    startLevel: 2
