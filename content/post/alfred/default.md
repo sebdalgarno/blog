@@ -14,7 +14,7 @@ title: Configuring Alfred to search for .Rproj files
 weight: 10
 ---
 
-**tl;dr** add `dyn.ah62d4rv4ge81e6dwr7za` to `Preferences -> Features -> Default Results -> Advanced...` panel to add .Rproj as a user-defined file type.
+**TL;DR** add `dyn.ah62d4rv4ge81e6dwr7za` to `Preferences -> Features -> Default Results -> Advanced...` panel to add .Rproj as a user-defined file type.
 
 # Overview
 [Alfred](https://www.alfredapp.com/) app is a productivity app (in their words) for MacOS [^1] that does many many things. So far, I've just been using it's search functionality and am finding it quite sweet indeed (think Spotlight, but better). The use case here is that I want to avoid using my mouse to search for various Rstudio `.Rproj` files (i.e. in Finder).

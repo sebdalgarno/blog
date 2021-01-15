@@ -15,7 +15,7 @@ title: Using a git alias to commit and stage all files
 weight: 10
 ---
 
-**tl;dr** type `git config --global alias.coa "!git add -A && git commit -m"` in the command line. From now on, use `git coa 'message here'` to commit and stage all files!
+**TL;DR** type `git config --global alias.coa "!git add -A && git commit -m"` in the command line. From now on, use `git coa 'message here'` to commit and stage all files!
 
 # Overview
 For years I have staged, committed and pushed changes with the RStudio Git interface.
