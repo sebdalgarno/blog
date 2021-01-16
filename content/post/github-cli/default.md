@@ -97,9 +97,20 @@ git coa 'fixed it'
 If the above git commands look strange that's because they're aliases! Check out my [post on git alias](https://fishydata.netlify.app/post/git-alias/) for details.
 {{% /admonition %}}
 
-Now I'll create a PR with `gh`, request a review from my boss and merge it.
+Now I'll create a pull request with `gh`, request a review from my boss and merge it.
 ```
-gh pr create --title "The bug is fixed" --body "Everything works again"
+gh pr create --title "fixed it" --body "good lord that took me 35 hours" 
+
+# ? Where should we push the 'fix_that_bug' branch? sebdalgarno/blog
+#
+# Creating pull request for fix_that_bug into master in sebdalgarno/blog
+#
+# remote: 
+# remote: 
+# To github.com:sebdalgarno/blog.git
+#  * [new branch]      HEAD -> fixed_that_bug
+# Branch 'fixed_that_bug' set up to track remote branch 'fixed_that_bug' from 'origin'.
+# https://github.com/sebdalgarno/blog/pull/11
 ```
 
 There's more to be discovered! See the [full list of commands and examples](https://cli.github.com/manual/examples.html) and some resources for setting up [scripts and aliases](https://cli.github.com/manual/#extending-the-cli).
