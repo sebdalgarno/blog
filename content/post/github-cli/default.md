@@ -81,12 +81,14 @@ gh issue list
 ```
 
 # Dealing with pull requests
-I'm going to create a branch called 'fix_that_bug' and fix that bug (you know, *that* one). I'll then create a PR with `gh` and merge it. 
+I'm going to create a branch called 'fix_that_bug' and fix that bug (you know, *that* one), commit and push those changes and create a PR with `gh` and merge it. 
 
 ```
 git checkout -b fix_that_bug
 # Switched to a new branch "fix_that_bug"
 ```
+
+Then change something 
 
 add this thing
 
