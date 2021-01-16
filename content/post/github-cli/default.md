@@ -97,7 +97,7 @@ git coa 'fixed it'
 If the above git commands look strange that's because they're aliases! Check out my [post on git alias](https://fishydata.netlify.app/post/git-alias/) for details.
 {{% /admonition %}}
 
-Now I'll create a pull request with `gh`, request a review from my boss and merge it.
+Now I'll create a pull request with `gh`,
 ```
 gh pr create --title "fixed it" --body "good lord that took me 35 hours" 
 
@@ -108,10 +108,17 @@ gh pr create --title "fixed it" --body "good lord that took me 35 hours"
 # remote: 
 # remote: 
 # To github.com:sebdalgarno/blog.git
-#  * [new branch]      HEAD -> fixed_that_bug
-# Branch 'fixed_that_bug' set up to track remote branch 'fixed_that_bug' from 'origin'.
-# https://github.com/sebdalgarno/blog/pull/11
+#  * [new branch]      HEAD -> fix_that_bug
+# Branch 'fix_that_bug' set up to track remote branch 'fix_that_bug' from 'origin'.
+# https://github.com/sebdalgarno/blog/pull/12
 ```
+check the diff (<kbd>Ctrl</kbd>-<kbd>c</kbd> to quit process)
+```
+gh pr diff 12
+```
+```
+```
+and merge it.
 
 There's more to be discovered! See the [full list of commands and examples](https://cli.github.com/manual/examples.html) and some resources for setting up [scripts and aliases](https://cli.github.com/manual/#extending-the-cli).
 
