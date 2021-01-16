@@ -57,7 +57,7 @@ gh issue close 2
 # ✔ Closed issue #2 (not rendering Rmd)
 ```
 
-As an aside, I use this [neat little trick](https://github.blog/2013-01-22-closing-issues-via-commit-messages/) to close issues automatically by adding `fixes #33` to a commit message (where 33 is the issue #). `gh issue list` is going to be super helpful to remember the issue#.
+As an aside, I use this [neat little trick](https://github.blog/2013-01-22-closing-issues-via-commit-messages/) to close issues automatically by adding `fixes #33` to a commit message (where 33 is the issue #). `gh issue list` is going to be super helpful to find the issue #.
 
 ## Create issues
 I'll create an issue to finish this post. I am being a little hard on myself here (since I'm already working on it!), but I really should finish this post. 
@@ -81,7 +81,8 @@ gh issue list
 ```
 
 # Dealing with pull requests
-I'm going to create a branch called 'fix_that_bug' and fix that bug (you know, *that* one), commit and push those changes. 
+## Create changes on a branch
+I'm going to create a branch called 'fix_that_bug' and fix that bug (you know, *that* one). Then I'll commit and push those changes. 
 
 ```
 git cb fix_that_bug
@@ -91,12 +92,13 @@ git coa 'fixed it'
 [fix_that_bug 35457d9] fixed it
  1 file changed, 3 insertions(+), 1 deletion(-)
  
- git p
+git p
 ```
 {{% admonition tip tip %}}
 If the above git commands look strange that's because they're aliases! Check out my [post on git alias](https://fishydata.netlify.app/post/git-alias/) for details.
 {{% /admonition %}}
 
+## Create pull request and merge
 Now I'll create a pull request with `gh`,
 ```
 gh pr create --title "fixed it" --body "good lord that took me 35 hours" 
@@ -116,16 +118,30 @@ check the diff (<kbd>Ctrl</kbd>-<kbd>c</kbd> to quit process)
 ```
 gh pr diff 12
 ```
+merge it,
 ```
+gh pr merge 12
+# ? What merge method would you like to use? Create a merge commit
+# ? Delete the branch locally and on GitHub? Yes
+# ? Submit? Yes
+# ✔ Merged pull request #12 (fixed it)
+# ✔ Deleted branch fix_that_bug and switched to branch master
 ```
-and merge it.
+and pull into local master (or main) branch.
+```
+git pull
+```
 
-There's more to be discovered! See the [full list of commands and examples](https://cli.github.com/manual/examples.html) and some resources for setting up [scripts and aliases](https://cli.github.com/manual/#extending-the-cli).
+That's it for now!
 
 Oh ya one more thing
 ```
 gh issue close 9
 # ✔ Closed issue #9 (Finish GitHub CLI post)
 ```
+
+{{% admonition tip tip %}}
+See the [full list of commands and examples](https://cli.github.com/manual/examples.html) and some resources for setting up [scripts and aliases](https://cli.github.com/manual/#extending-the-cli).
+{{% /admonition %}}
 
 [^1]: although regardless of time spent to achieve this, it's still useful to have the commit referenced in the issue
