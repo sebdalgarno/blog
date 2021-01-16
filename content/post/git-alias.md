@@ -43,9 +43,9 @@ The real productivity gains are made by using a [git alias](https://git-scm.com/
 ```
 git config --global alias.p "push"
 ```
-And to set up the alias `git c` for `git commit`:
+And to set up the alias `git cb` for creating and checking out a branch `git checkout -b some_new_branch`:
 ```
-git config --global alias.c "commit"
+git config --global alias.cb "checkout -b"
 ```
 
 Going back to our previous case of stage/commit all, we can set up the alias `git coa`:
