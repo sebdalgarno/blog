@@ -81,11 +81,36 @@ gh issue list
 ```
 
 # Dealing with pull requests
-I'm going to create a branch called 'fix_that_bug' and fix that bug (you know, *that* one). I'll then create a PR with `gh` and merge it. 
+I'm going to create a branch called 'fix_that_bug' and fix that bug (you know, *that* one), commit and push those changes. 
 
 ```
-git checkout -b fix_that_bug
+git cb fix_that_bug
 # Switched to a new branch "fix_that_bug"
+
+git coa 'fixed it'
+[fix_that_bug 35457d9] fixed it
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+ 
+ git p
+```
+{{% admonition tip tip %}}
+If the above git commands look strange that's because they're aliases! Check out my [post on git alias](https://fishydata.netlify.app/post/git-alias/) for details.
+{{% /admonition %}}
+
+Now I'll create a pull request with `gh`, request a review from my boss and merge it.
+```
+gh pr create --title "fixed it" --body "good lord that took me 35 hours" 
+
+# ? Where should we push the 'fix_that_bug' branch? sebdalgarno/blog
+#
+# Creating pull request for fix_that_bug into master in sebdalgarno/blog
+#
+# remote: 
+# remote: 
+# To github.com:sebdalgarno/blog.git
+#  * [new branch]      HEAD -> fixed_that_bug
+# Branch 'fixed_that_bug' set up to track remote branch 'fixed_that_bug' from 'origin'.
+# https://github.com/sebdalgarno/blog/pull/11
 ```
 
 There's more to be discovered! See the [full list of commands and examples](https://cli.github.com/manual/examples.html) and some resources for setting up [scripts and aliases](https://cli.github.com/manual/#extending-the-cli).
