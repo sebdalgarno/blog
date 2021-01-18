@@ -74,6 +74,11 @@
 <link rel="stylesheet" href="{{ "/css/" | relURL }}{{ . }}">
 {{ end }}
 
+<!-- make html dependencies working -->
+{{ range .Params.html_dependencies }}
+  {{ . | safeHTML }}
+{{ end }}
+
 {{/* NOTE: These Hugo Internal Templates can be found starting at https://github.com/spf13/hugo/blob/master/tpl/tplimpl/template_embedded.go#L158 */}}
 {{- template "_internal/opengraph.html" . -}}
 {{- template "_internal/google_news.html" . -}}
