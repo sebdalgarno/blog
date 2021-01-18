@@ -14,7 +14,7 @@ The blog name 'Fishy Data' is of course a little play on words. I work with fish
 
 I'm a PhD student at the UNBC [Freshwater Fish Ecology lab](https://www.ffishlab.ca/). We are using many years of acoustic telemetry data and Bayesian models to make inferences about White Sturgeon movement in the Columbia River. Formerly, I was a computational biologist at [Poisson Consulting](https://www.poissonconsulting.ca). 
 
-Check out my [academic](htpps://www.sebdalgarno.netlify.app) and [consulting](https://www.northbeachconsulting.ca/) websites for more info. Also check out some recordings from my band [Rusty Mould and the Sugar Agates](https://rustymouldandthesugaragates.bandcamp.com/)!
+Check out my [consulting website](https://www.northbeachconsulting.ca/) website for more info. Also check out some recordings from my band [Rusty Mould and the Sugar Agates](https://rustymouldandthesugaragates.bandcamp.com/)!
 
 {{% center %}}
 <img src="/img/sturgeon_sm.jpg" alt="sturgeon"
