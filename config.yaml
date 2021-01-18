@@ -1,7 +1,7 @@
 baseURL: https://fishydata.netlify.app
 languageCode: en
 defaultContentLanguage: en
-title: Fishy Data - A blog by Seb Dalgarno
+title: Fishy Data blog
 preserveTaxonomyNames: yes
 enableRobotsTXT: yes
 enableEmoji: yes
