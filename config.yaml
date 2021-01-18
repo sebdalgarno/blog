@@ -60,7 +60,7 @@ params:
   changyanAppid: ''
   changyanAppkey: ''
   contentCopyright: ''
-  customCSS: []
+  customCSS: ['css/highlight.css']
   customJS: []
   dateFormatToUse: '2006-01-02'
   debug: no
