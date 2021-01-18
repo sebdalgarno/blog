@@ -48,7 +48,7 @@ menu:
       weight: 40
 params:
   archivePaginate: 50
-  autoCollapseToc: no
+  autoCollapseToc: yes
   baiduAnalytics: ''
   baiduPush: no
   baiduVerification: ''
@@ -76,10 +76,10 @@ params:
     owner: ''
     repo: ''
   gitment:
-    clientId: ''
-    clientSecret: ''
-    owner: ''
-    repo: ''
+    clientId: 'ac7b01fefb9635abbe7d'
+    clientSecret: '5f3f84bebab8cb49bf534b1ebcf7f910de764449'
+    owner: 'sebdalgarno'
+    repo: 'blog'
   googleVerification: ''
   highlightInClient: no
   keywords:
