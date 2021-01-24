@@ -63,7 +63,7 @@ params:
   customCSS: ['css/highlight.css']
   customJS: []
   dateFormatToUse: '2006-01-02'
-  debug: no
+  debug: nohugo
   description: A blog about R, fish movement and other computery things
   fancybox: yes
   flowchartDiagrams:
@@ -81,7 +81,7 @@ params:
     owner: 'sebdalgarno'
     repo: 'blog'
   googleVerification: ''
-  highlightInClient: no
+  highlightInClient: yes
   keywords:
     - rstats
     - acoustic telemetry

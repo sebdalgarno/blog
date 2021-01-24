@@ -1,0 +1,148 @@
+---
+title: Mapbox data preparation with rstats 
+author: Seb
+date: '2021-01-23'
+slug: web-map-data
+output: md_document
+categories:
+  - web map
+tags:
+  - rstats
+  - command line
+  - rspatial
+  - mapbox
+  - tippecanoe
+  - mapshaper
+  - rmapshaper
+  - mapboxapi
+lastmod: '2021-01-23T09:10:03-08:00'
+draft: yes
+keywords: []
+description: ''
+comment: no
+toc: no
+autoCollapseToc: no
+postMetaInFooter: no
+hiddenFromHomePage: no
+contentCopyright: no
+reward: no
+mathjax: no
+mathjaxEnableSingleDollar: no
+mathjaxEnableAutoNumber: no
+hideHeaderAndFooter: no
+flowchartDiagrams:
+  enable: no
+  options: ''
+sequenceDiagrams:
+  enable: no
+  options: ''
+---
+
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+
+</div>
+
+<p>I recently created <a href="https://haidagwaiilogging.netlify.app/">this web app</a> mapping the logging history of Haida Gwaii, British Columbia from 1900-2017. It uses Mapbox/Mapbox GL JS for the slippy map and neat colour alteration over time. This dataset is large! To improve rendering times, I needed to reduce the file size, dissolve features by year, simplify features (without losing too much information) and convert to mbtiles file format.</p>
+<p>The node.js command line tools <code>mapshaper</code> and <code>tippecanoe</code> can be used for these steps and R package wrappers (<code>rmapsahper</code> and <code>mapboxapi</code>) also exist. The <code>mapboxapi</code> R package can also be used to upload data to a Mapbox account from the console, which is pretty sweet.</p>
+<p>This post explores two main questions:</p>
+<ol style="list-style-type: decimal">
+<li>Can all data preparation be done within the rstats ecosystem?<br />
+</li>
+<li>How much is performance improved by using the command line tools directly?</li>
+</ol>
+<div id="the-rstats-comfort-zone" class="section level1">
+<h1>The rstats comfort zone</h1>
+<p>I like to keep data preparation within the rstats ecosystem for reproducibility (e.g. if a client updates data somewhere along the pipeline) and to reduce context-switching. As an rstats user I am also more comfortable navigating my way around documentation for R packages than other bits of software.</p>
+<p>{{% admonition tip tip %}}
+If you want to follow along, you’ll need to install the <code>rmapshaper</code>, <code>mapboxapi</code>, <code>sf</code>, <code>ggplot2</code>, <code>mapdeck</code> R packages and the <code>mapshaper</code> and <code>tippecanoe</code> node.js command line tools.
+{{% /admonition %}}</p>
+<p>Let’s load the required libraries and a small section of the logging dataset for demonstration. This is logged areas from 1970-2019 in the Yakoun River watershed.</p>
+<pre class="r"><code>library(sf)
+library(ggplot2)
+library(rmapshaper)
+library(mapboxapi)
+library(mapdeck)
+
+logged &lt;- st_read(&quot;data/logged_yakoun.geojson&quot;, quiet = TRUE)
+wshed &lt;- st_read(&quot;data/yakoun.geojson&quot;, quiet = TRUE)</code></pre>
+<pre class="r"><code>ggplot(logged) +
+  geom_sf(data = wshed, fill = &quot;transparent&quot;) +
+  geom_sf(aes(fill = year), lwd = 0.01)</code></pre>
+<p><img src="images/map-1.png" width="672" /></p>
+<p>I’ll set up a function to dissolve and simplify the polygons and convert to mbtiles file format.</p>
+<pre class="r"><code>prepare_data_r &lt;- function(data){
+  data &lt;- data %&gt;%
+    
+    # dissolve for each year
+    # if you have the mapshaper installed, use sys = TRUE
+    rmapshaper::ms_dissolve(field = &quot;year&quot;, sys = TRUE) %&gt;%
+    
+    # I prevent small shapes from disappearing with keep_shapes = TRUE and explode = TRUE 
+    rmapshaper::ms_simplify(keep = 0.05, keep_shapes = TRUE, sys = TRUE)
+  
+  mapboxapi::tippecanoe(input = data,
+             output = &quot;data/logged_r.mbtiles&quot;,
+             layer_name = &quot;logged_r&quot;,
+             overwrite = TRUE)
+}
+
+prepare_data_r(logged)</code></pre>
+<p>{{% admonition tip tip %}}
+If you are running into a self-intersection error, use <code>lwgeom::lwgeom_make_valid()</code>.
+{{% /admonition %}}</p>
+</div>
+<div id="welcome-command-line-to-the-party" class="section level1">
+<h1>Welcome command line to the party</h1>
+<p>Let’s try doing the same data prep steps with the command line tools. Here, we can work from the geojson file directly and set up a makefile to streamline the process. For a great tutorial on mapshaper and makefile check out <a href="https://moriartynaps.org/command-carto-part-two/">this beautiful post</a>.</p>
+<p>The makefile sits in the root of our working directory and looks like this.</p>
+<pre><code>mapshape_simplify:
+    mapshaper data/logged_yakoun.geojson \
+        -dissolve2 fields=year \
+        -simplify 1% keep-shapes \
+        -o data/logged_simplify.json
+
+tippecanoe_layer:
+    tippecanoe -o data/logged.mbtiles --coalesce-densest-as-needed data/logged_simplify.json --force    
+
+sweet_sweet_data:
+    make mapshape_simplify
+    make tippecanoe_layer</code></pre>
+<p>I’ll set up a simple function to call the makefile from an R script.</p>
+<pre class="r"><code>prepare_data_make &lt;- function(){
+  system(&quot;make sweet_sweet_data&quot;)
+}
+
+prepare_data_make()</code></pre>
+</div>
+<div id="some-benchmarking" class="section level1">
+<h1>Some benchmarking</h1>
+<p>We can use the <code>microbenchmark</code> package to compare the performance of these two pipelines.</p>
+<pre class="r"><code>library(microbenchmark)
+
+# we have to modify our r package function slightly to clear the tempdir after each cycle
+prepare_data_rstats &lt;- function(data){
+  file.remove(list.files(tempdir(), full.names = T, pattern = &quot;geojson&quot;))
+  prepare_data_r(data)
+}
+
+res &lt;- microbenchmark::microbenchmark(prepare_data_rstats(logged), prepare_data_make(), times = 10)
+
+ggplot2::autoplot(res)</code></pre>
+<pre><code>## Coordinate system already present. Adding new coordinate system, which will replace the existing one.</code></pre>
+<p><img src="images/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Using the command line tools directly takes about a third of the time. This was expected as there’s bound to be some overhead in the wrappers. I don’t fully understanding the underpinning functionality, but I suspect that the R wrappers lag because they have to read and write temporary files to handle sf objects as input/output.</p>
+</div>
+<div id="upload-to-mapbox" class="section level1">
+<h1>Upload to Mapbox</h1>
+<p>Finally, I’ll use the <code>mapboxapi</code> R package to upload the data to Mapbox. See <a href="https://walker-data.com/mapboxapi/articles/creating-tiles.html">this guide</a> for more on how to setup mapboxapi and access tokens.</p>
+<pre class="r"><code>upload_tiles(input = &quot;data/logged.mbtiles&quot;, 
+             username = &quot;northbeachconsulting&quot;,
+             tileset_id = &quot;logged_yakoun&quot;)</code></pre>
+</div>
+<div id="final-thoughts" class="section level1">
+<h1>Final thoughts</h1>
+<p>It is pretty great that all of this can be done within rstats. Benchmarking showed that using the command line tools resulted in some speed gains. However, for our small dataset, this was only ~2 seconds. If your dataset is small and you are more familiar wtih rstats, I would probably just stick with the R packages. I recently started work on an app visualizing logging history for the entire province (~4gb spatial file) and have found that the R package pipeline more or less breaks with data this large. Moreover, using a makefile and the <code>system()</code> rstats function, it is still possible to reproduce the same outputs by sourcing an R script.</p>
+<p>Either way, all these tools are amazing and open source so thanks to the developers (Andy Teucher, Matthew Bloch, Kyle Walker, and the Mapbox team) and contributors!</p>
+</div>
