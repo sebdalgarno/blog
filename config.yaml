@@ -81,7 +81,7 @@ params:
     owner: 'sebdalgarno'
     repo: 'blog'
   googleVerification: ''
-  highlightInClient: yes
+  highlightInClient: no
   keywords:
     - rstats
     - acoustic telemetry

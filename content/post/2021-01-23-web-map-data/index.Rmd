@@ -42,14 +42,14 @@ sequenceDiagrams:
 knitr::opts_chunk$set(warning = FALSE, message = TRUE, fig.path = "images/") 
 ```
 
-I recently created [this web app](https://haidagwaiilogging.netlify.app/) mapping the logging history of Haida Gwaii, British Columbia from 1900-2017. It uses Mapbox/Mapbox GL JS for the slippy map and neat colour alteration over time. This dataset is large! To improve rendering times, I needed to reduce the file size, dissolve features by year, simplify features (without losing too much information) and convert to mbtiles file format. 
+I recently created [this web app](https://haidagwaiilogging.netlify.app/) mapping the logging history of Haida Gwaii, British Columbia from 1900-2017. It uses Mapbox/Mapbox GL JS for the slippy map and neat colour alteration over time. This dataset is large! To improve rendering times, I needed to reduce the file size, dissolve features by year, simplify features (without losing too much information) and convert to a multi-layered mbtiles file that renders new data at different zoom levels. 
 
 The node.js command line tools `mapshaper` and `tippecanoe` can be used for these steps and R package wrappers (`rmapsahper` and `mapboxapi`) also exist. The `mapboxapi` R package can also be used to upload data to a Mapbox account from the console, which is pretty sweet. 
 
 This post explores two main questions:  
 
-1. Can all data preparation be done within the rstats ecosystem?  
-1. How much is performance improved by using the command line tools directly?  
+1. What is the best way to prepare very large spatial datasets for Mapbox?  
+1. How do the R package wrappers perform compared to the command lines tools?  
 
 # The rstats comfort zone
 I like to keep data preparation within the rstats ecosystem for reproducibility (e.g. if a client updates data somewhere along the pipeline) and to reduce context-switching. As an rstats user I am also more comfortable navigating my way around documentation for R packages than other bits of software.
