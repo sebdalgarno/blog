@@ -3,11 +3,11 @@ title: "Accounting for detection range variation in acoustic telemetry arrays"
 output: hugodown::md_document
 date: 2021-04-08T16:19:13-07:00
 lastmod: 2021-04-08T16:19:13-07:00
-draft: true
+draft: false
 keywords: []
 description: ""
-tags: []
-categories: []
+tags: ["acoustic telemetry", "analysis", "detection error"]
+categories: ["acoustic telemetry"]
 author: "Seb"
 comment: true
 toc: false
@@ -26,7 +26,7 @@ flowchartDiagrams:
 sequenceDiagrams: 
   enable: false
   options: ""
-rmd_hash: e054915cd53692f8
+rmd_hash: 18cd3915fe7769b4
 
 ---
 
@@ -141,7 +141,7 @@ Step 2: Simulate some detection range data, where depth has an effect on the DE 
   <span class='nf'><a href='https://ggplot2.tidyverse.org/reference/facet_wrap.html'>facet_wrap</a></span><span class='o'>(</span><span class='o'>~</span><span class='nv'>receiver</span><span class='o'>)</span> <span class='o'>+</span> 
   <span class='nf'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='o'>(</span>x <span class='o'>=</span> <span class='s'>"Distance from Receiver (m)"</span>, y <span class='o'>=</span> <span class='s'>"Detection Efficiency (%)"</span><span class='o'>)</span>
 </code></pre>
-<img src="figs/dr_plot-1.png" width="700px" style="display: block; margin: auto;" />
+<img src="./figs/dr_plot-1.png" width="700px" style="display: block; margin: auto;" />
 
 </div>
 

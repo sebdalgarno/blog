@@ -1,13 +1,13 @@
 ---
-title: "Fish and Nathan's movement ecology paradigm"
+title: "Acoustic telemetry and Nathan's movement ecology paradigm"
 date: 2021-04-09T15:11:11-07:00
 output: hugodown::md_document
 lastmod: 2021-04-09T15:11:11-07:00
 draft: true
 keywords: []
 description: ""
-tags: []
-categories: []
+tags: ["acoustic telemetry", "movement ecology", "analysis"]
+categories: ["acoustic telemetry"]
 author: "Seb"
 comment: true
 toc: false
@@ -26,7 +26,7 @@ flowchartDiagrams:
 sequenceDiagrams: 
   enable: false
   options: ""
-rmd_hash: b1016886471c5b51
+rmd_hash: 934aea03ed3916d4
 
 ---
 

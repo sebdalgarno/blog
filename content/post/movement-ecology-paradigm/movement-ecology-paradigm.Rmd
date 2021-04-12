@@ -6,8 +6,8 @@ lastmod: 2021-04-09T15:11:11-07:00
 draft: true
 keywords: []
 description: ""
-tags: []
-categories: []
+tags: ["acoustic telemetry", "movement ecology", "analysis"]
+categories: ["acoustic telemetry"]
 author: "Seb"
 comment: true
 toc: false
