@@ -1,0 +1,169 @@
+---
+title: "Accounting for detection range variation in acoustic telemetry arrays"
+output: hugodown::md_document
+date: 2021-04-08T16:19:13-07:00
+lastmod: 2021-04-08T16:19:13-07:00
+draft: false
+keywords: []
+description: ""
+tags: []
+categories: []
+author: "Seb"
+comment: true
+toc: false
+autoCollapseToc: false
+postMetaInFooter: false
+hiddenFromHomePage: false
+contentCopyright: false
+reward: false
+mathjax: false
+mathjaxEnableSingleDollar: false
+mathjaxEnableAutoNumber: false
+hideHeaderAndFooter: false
+flowchartDiagrams:
+  enable: false
+  options: ""
+sequenceDiagrams: 
+  enable: false
+  options: ""
+---
+
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(warning = FALSE, message = TRUE) 
+```
+
+I have been reading [this great paper](https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/2041-210X.13322) by Jacob Brownscombe et al., which outlines a practical approach to accounting for detection range (DR) variation in acoustic telemetry arrays. I am a little ashamed to say that this is something I haven't thought a lot about, despite working with acoustic telemetry data a fair bit. As an example of the pitfalls of failing to account for variation in DR, Brownscombe points to a study by Payne et al. (2010) on the diel patterns in use of nearshore habitats by cuttlefish. Whereas the raw data showed that cuttlefish used these areas more during the day, the corrected data showed that they used these areas more at night. Not only did this affect the effect size, but it completely changed the directionality of the effect, which fundamentally changes our understanding of the species biology and how to manage them!
+
+# Why is there variation in detection range?
+In acoustic telemetry studies, we typically set up an array of stationary receivers within a study area and tag some animals with acoustic transmitters. These animals (let's say fish) swim around sending out supersonic acoustic transmissions every few seconds. When the fish passes within the receivers detection range, the receiver records the unique id of the transmitter and time of detection. So far, pretty straightforward (at least from a data perspective, not logistically!) The tricky part is that **detection efficiency (DE) decreases with distance from receiver and the DR for each receiver varies in space and time**.
+
+So what causes this variation?  
+First, these acoustic signals may never reach the receiver as they can be:  
+
+1. attenuated, retracted, or lost due to spreading in water.  
+1. disrupted by physical barriers.  
+1. muted by environmental or biological noise.  
+
+Second, the signal could be wrongly interpreted by the receiver (i.e. false detection) if:  
+1. tags are mutated by noise but still decoded by a receiver.  
+1. tags operating on the same frequemcy collide with one another and arrive at the receiver simultaneously.
+
+These are imperfect sampling systems that are affected by conditions in the surrounding environment (e.g. rugosity, depth, anthropogenic or environmental noise) and how many other tags exist in the study area (with more tags leading to less DE).
+
+# How do we deal with this variation to correct our analyses?
+
+Frist some definitions:  
+- **DR** - the 3-dimensional space surrounding a receiver that a transmitter can be detected in  
+- **DE** (%) - # detections in given time period / total expected detections based on transmission rate * 100  
+- **MR** - estimated distance from receiver with 5% DE  
+- **Midpoint** - estimated distance from receiver with 50% DE  
+- **DEv** - difference between detection efficiency in given time period and mean detection efficiency of reference tag  
+- **DEvc** - DEv standardized to +/- 50% (across receivers)  
+- **DRc** - DR correction facto derived from MR and DEvc   
+- **Det** - number of detections  
+- **Detc** - number of detections corrected using DRc  
+
+Brownscombe suggests a practical approach to deal with this issue:  
+1. **Select a set of sentinel receivers** that represent the full range of environmental conditions (these will be used to predict DE at the rest of the receivers) and measure/record site characteristics in space (e.g. depth, benthos) and time (e.g. tide, diel period).  
+1. **Quantify the MR and Midpoint** at each sentinel receiver. This can be done by dropping a tag at various distances from a receiver, measuring DE and modelling the relationship between efficiency and distance to estimate the Midpoint and MR.  
+1. **Quanitfy the variance in DE** (DEv) at each sentinel receiver. This is done by dropping a reference tag (i.e., tag with longer transmission delay ~200-700 seconds) at the Midpoint (e.g. 200m away) and leaving it there for the duration of the study.  
+1. **Calculate detection range correction factor** (DRc). This uses DEv and MR.  
+1. **Model relationship between DRc and site characteristics** to predict DRc at other receivers in array.  
+1. **Correct detection data** using predicted DRc.  
+
+To make this process more clear, I'll simulate some data and show the R code to calculate each step. Note that I referenced the code provided in Brownscombe et al. supplementary info, but have modified it quite a bit.
+
+# Calculate Midpoint and MR
+Step 1: Create some fake receivers at different depths, half of which are sentinels.
+```{r}
+nrec <- 16
+set.seed(99)
+
+rec <- data.frame(receiver = 1:nrec,
+             depth = runif(nrec, 5, 20),
+             sentinel = c(TRUE, FALSE))
+rec
+```
+
+Step 2: Simulate some detection range data, where depth has an effect on the DE curve.
+```{r dr_plot}
+library(ggplot2)
+library(extras)
+library(purrr)
+
+dr <- map_df(seq_along(rec$receiver[rec$sentinel]), function(x){
+  df <- rec[x,]
+  
+  distance <- seq(0, 500, 60)
+  b0 <- logit(0.99)
+  bDist <- -0.027   
+  bDepth <- 0.2
+  z <- b0 + bDist * distance + bDepth * df$depth 
+  pr <- ilogit(z)
+  
+  nsample <- 50
+  success <- rbinom(rep(1, length(pr)), nsample, pr)
+  failure <- nsample - success
+  de <- success/nsample
+  
+  dr <- data.frame(receiver = x,
+               depth = df$depth,
+               distance = distance,
+               success  = success,
+               failure = failure,
+               de = de)
+})
+
+ggplot(data = dr) +
+  geom_point(aes(x = distance, y = de*100, color = depth)) +
+  facet_wrap(~receiver) + 
+  labs(x = "Distance from Receiver (m)", y = "Detection Efficiency (%)")
+```
+
+We can estimate the Midpoint and MR for each sentinel receiver by modelling the relationship between DE and distance for each receiver. Here, we use a generalized linear model with binomial family (logistic regression), although Brownscombe et al. used a third-order polynomial liner regression with forced y-intercept at 1.
+```{r dr_model}
+# create models for each sentinel receiver
+rec <- unique(dr$receiver)
+models <- map(rec, function(x){
+  dat <- dr[dr$receiver == x,]
+  glm(cbind(success, failure) ~ distance, data = dat, family = "binomial")
+}) %>% set_names(rec)
+
+# function to calculate distance for a desired DE value
+calc_distance_at_de <- function(model, value) {
+  find_int <- function(model, value) {
+    function(x){
+      predict(model, data.frame(distance = x), type = "response") - value
+    }
+  }
+  uniroot(find_int(model, value), range(dr$distance))$root
+}
+
+# sequence of distance values to predict DE on
+distvals <- seq(0, 600, 1)
+
+# for each receiver and it's respective model, predict over range of distance values and 
+# estimate Midpoint and MR
+preds <- map_df(rec, function(x){
+  predvals <- predict(models[[x]], list(distance = distvals), type = "response")
+  midpoint <- calc_distance_at_de(models[[x]], 0.5)
+  mr <- calc_distance_at_de(models[[x]], 0.05)
+  data.frame(receiver = x,
+             distance = distvals,
+             predvals = predvals,
+             midpoint = midpoint,
+             mr = mr)
+})
+
+ggplot(data = dr) +
+  geom_point(aes(x = distance, y = de*100, color = depth)) +
+  geom_line(data = preds, aes(x = distance, y = predvals*100), colour="black") +
+  geom_point(data = preds, aes(x = midpoint, y = 50), color = "red", size = 2) +
+  geom_point(data = preds, aes(x = mr, y = 5), color = "red", size = 2) +
+  facet_wrap(~receiver) + 
+  labs(x = "Distance from Receiver (m)", y = "Detection Efficiency (%)")
+```
+
+Now that we've calculated our Midpoints for each sentinel, let's put a reference tag there to calculate DE over time. We'll simulate some data where DE has a positive relationship with day and the magnitude of the effect increases with depth. This is not very realistic (a seasonal effect would be better and I don't know if influence of depth is a realistic mechanism) but it'll work just for demonstration purposes.
+
+

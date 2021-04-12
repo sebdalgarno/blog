@@ -30,6 +30,7 @@ mathjax: no
 mathjaxEnableSingleDollar: no
 mathjaxEnableAutoNumber: no
 hideHeaderAndFooter: no
+highlightInClient: no
 flowchartDiagrams:
   enable: no
   options: ''

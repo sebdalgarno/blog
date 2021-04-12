@@ -30,6 +30,7 @@ mathjax: no
 mathjaxEnableSingleDollar: no
 mathjaxEnableAutoNumber: no
 hideHeaderAndFooter: no
+highlightInClient: no
 flowchartDiagrams:
   enable: no
   options: ''
@@ -44,13 +45,13 @@ sequenceDiagrams:
 
 </div>
 
-<p>I recently created <a href="https://haidagwaiilogging.netlify.app/">this web app</a> mapping the logging history of Haida Gwaii, British Columbia from 1900-2017. It uses Mapbox/Mapbox GL JS for the slippy map and neat colour alteration over time. This dataset is large! To improve rendering times, I needed to reduce the file size, dissolve features by year, simplify features (without losing too much information) and convert to mbtiles file format.</p>
+<p>I recently created <a href="https://haidagwaiilogging.netlify.app/">this web app</a> mapping the logging history of Haida Gwaii, British Columbia from 1900-2017. It uses Mapbox/Mapbox GL JS for the slippy map and neat colour alteration over time. This dataset is large! To improve rendering times, I needed to reduce the file size, dissolve features by year, simplify features (without losing too much information) and convert to a multi-layered mbtiles file that renders new data at different zoom levels.</p>
 <p>The node.js command line tools <code>mapshaper</code> and <code>tippecanoe</code> can be used for these steps and R package wrappers (<code>rmapsahper</code> and <code>mapboxapi</code>) also exist. The <code>mapboxapi</code> R package can also be used to upload data to a Mapbox account from the console, which is pretty sweet.</p>
 <p>This post explores two main questions:</p>
 <ol style="list-style-type: decimal">
-<li>Can all data preparation be done within the rstats ecosystem?<br />
+<li>What is the best way to prepare very large spatial datasets for Mapbox?<br />
 </li>
-<li>How much is performance improved by using the command line tools directly?</li>
+<li>How do the R package wrappers perform compared to the command lines tools?</li>
 </ol>
 <div id="the-rstats-comfort-zone" class="section level1">
 <h1>The rstats comfort zone</h1>

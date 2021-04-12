@@ -1,5 +1,6 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
+output: hugodown::md_document
 date: {{ .Date }}
 lastmod: {{ .Date }}
 draft: true
