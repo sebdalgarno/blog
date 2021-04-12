@@ -3,7 +3,7 @@ title: "Accounting for detection range variation in acoustic telemetry arrays"
 output: hugodown::md_document
 date: 2021-04-08T16:19:13-07:00
 lastmod: 2021-04-08T16:19:13-07:00
-draft: false
+draft: true
 keywords: []
 description: ""
 tags: []
@@ -26,7 +26,7 @@ flowchartDiagrams:
 sequenceDiagrams: 
   enable: false
   options: ""
-rmd_hash: 312fce6f495d8e2b
+rmd_hash: e054915cd53692f8
 
 ---
 
@@ -55,7 +55,8 @@ Frist some definitions:
 - **DR** - the 3-dimensional space surrounding a receiver that a transmitter can be detected in  
 - **DE** (%) - \# detections in given time period / total expected detections based on transmission rate \* 100  
 - **MR** - estimated distance from receiver with 5% DE  
-- **Midpoint** - estimated distance from receiver with 50% DE - **DEv** - difference between detection efficiency in given time period and mean detection efficiency of reference tag  
+- **Midpoint** - estimated distance from receiver with 50% DE  
+- **DEv** - difference between detection efficiency in given time period and mean detection efficiency of reference tag  
 - **DEvc** - DEv standardized to +/- 50% (across receivers)  
 - **DRc** - DR correction facto derived from MR and DEvc  
 - **Det** - number of detections  

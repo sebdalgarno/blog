@@ -3,7 +3,7 @@ title: "Accounting for detection range variation in acoustic telemetry arrays"
 output: hugodown::md_document
 date: 2021-04-08T16:19:13-07:00
 lastmod: 2021-04-08T16:19:13-07:00
-draft: false
+draft: true
 keywords: []
 description: ""
 tags: []
